@@ -87,9 +87,9 @@ img{
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
 
-/*=====================================*/
-/*   RESPONSIVE   (min-width: 1917px )  */
-/*=====================================*/
+/*======================================*/
+/*   RESPONSIVE   (min-width: 1850px )  */
+/*======================================*/
 
 @media all and (min-width: 1850px)
 {
@@ -299,13 +299,11 @@ img{
     flex-direction: column;
     position: fixed;
     text-align: center;
-    padding: 6em;
-    padding-top: 16em;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
     z-index: 2; /* Ajouter pour pertubation du calendar (passe au travers)*/
+    background-color: #151515;
   }
   #mainbistrot article{
     align-items: center;
@@ -319,9 +317,10 @@ img{
   #mainbistrot h2{
     font-family: 'Lobster', cursive;
     font-size: 28px;
-    color: #FB7826;
+    color: #B3FA84;
   }
   #mainbistrot p{
+    text-align: left;
     font-family: 'Mirza', cursive;
     font-size: 22px;
   }
@@ -330,14 +329,20 @@ img{
     width: 90%;
     height: 80%;
   }
+  #mainbistrot .sec_bistrot{
+    margin-top: 16em;
+  }
+  #mainbistrot .sec2_bistrot{
+    margin-left: 3em;
+  }
   article .img_txt{
     margin-top: 0.5em;
   }
   .hrsection_bistrot{
-    color: #FB7826;
+    color: #B3FA84;
     margin: 1em auto;
     width: 45%;
-    border: 1px solid #FB7826;
+    border: 1px solid #B3FA84;
   }
   .hr{ /* HR entre la Sec1 et la Se2, enlever*/
     display: none;
@@ -352,7 +357,7 @@ img{
     margin: 0.5em auto;
   }
   .sec1_bistrot{
-    border-right: 2px solid #FB7826;
+    border-right: 2px solid #B3FA84;
   }
   .sec3_bistrot{
     width: 40%;
@@ -580,6 +585,9 @@ img{
    cursor: pointer;
    text-shadow: none;
   }
+  #boutonbistrot{
+    margin-top: 0.5em;
+  }
 /*------------------------------------------------*/
 
 /*==================*/
@@ -649,13 +657,11 @@ img{
     flex-direction: column;
     position: fixed;
     text-align: center;
-    padding: 6em;
-    padding-top: 8em;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
     z-index: 2; /* Ajouter pour pertubation du calendar (passe au travers)*/
+    background-color: #151515;
   }
   #mainbistrot article{
     align-items: center;
@@ -667,25 +673,31 @@ img{
     margin: -0.5em;
   }
   #mainbistrot h2{
-    font-size: 18px;
-    color: #FB7826;
+    font-size: 20px;
+    color: #B3FA84;
   }
   #mainbistrot p{
-    font-size: 16px;
+    font-size: 18px;
   }
   #mainbistrot img{
     margin: 0.5em auto;
     width: 70%;
     height: 60%;
   }
+  #mainbistrot .sec_bistrot{
+    margin-top: 10em;
+  }
+  #mainbistrot .sec2_bistrot{
+    margin-left: 2em;
+  }
   article .img_txt{
     margin-top: 0.5em;
   }
   .hrsection_bistrot{
-    color: #FB7826;
+    color: #B3FA83;
     margin: 1em auto;
     width: 45%;
-    border: 1px solid #FB7826;
+    border: 1px solid #B3FA83;
   }
   .hr{ /* HR entre la Sec1 et la Se2, enlever*/
     display: none;
@@ -700,7 +712,7 @@ img{
     margin: 0.5em auto;
   }
   .sec1_bistrot{
-    border-right: 2px solid #FB7826;
+    border-right: 2px solid #B3FA84;
   }
   .sec3_bistrot{
     width: 60%;
@@ -987,7 +999,7 @@ img{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #151515;
     z-index: 2; /* Ajouter pour pertubation du calendar (passe au travers)*/
   }
   #mainbistrot article{
@@ -999,7 +1011,7 @@ img{
   }
   #mainbistrot h2{
     font-size: 20px;
-    color: #FB7826;
+    color: #B3FA84;
   }
   #mainbistrot p{
     font-size: 17px;
@@ -1013,16 +1025,16 @@ img{
     margin-top: 0.5em;
   }
   .hr{ /* HR entre la Sec1 et la Se2, ajouter car il n'y a pas la même class*/
-    color: #FB7826;
+    color: #B3FA84;
     margin: 0.5em auto;
     width: 45%;
-    border: 2px solid #FB7826;
+    border: 2px solid #B3FA84;
   }
   .hrsection_bistrot{
-    color: #FB7826;
+    color: #B3FA84;
     margin: 0.5em auto;
     width: 45%;
-    border: 2px solid #FB7826;
+    border: 2px solid #B3FA84;
   }
 /*------------------------------------------------*/
 
@@ -1306,7 +1318,7 @@ img{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #151515;
     z-index: 2; /* Ajouter pour pertubation du calendar (passe au travers)*/
   }
   #mainbistrot article{
@@ -1318,7 +1330,7 @@ img{
   }
   #mainbistrot h2{
     font-size: 20px;
-    color: #FB7826;
+    color: #B3FA84;
   }
   #mainbistrot p{
     font-size: 17px;
@@ -1328,19 +1340,19 @@ img{
     width: 35%;
   }
   .hr{ /* HR entre la Sec1 et la Se2, ajouter car il n'y a pas la même class*/
-    color: #FB7826;
+    color: #B3FA84;
     margin: 0.5em auto;
     width: 45%;
-    border: 2px solid #FB7826;
+    border: 2px solid #B3FA84;
   }
   article .img_txt{
     margin-top: 0.5em;
   }
   .hrsection_bistrot{
-    color: #FB7826;
+    color: #B3FA84;
     margin: 0.5em auto;
     width: 45%;
-    border: 2px solid #FB7826;
+    border: 2px solid #B3FA84;
   }
   .sec2_bistrot{
     margin-bottom: -1em;
@@ -1608,7 +1620,7 @@ img{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #151515;
     z-index: 2; /* Ajouter pour pertubation du calendar (passe au travers)*/
   }
   #mainbistrot article{
@@ -1620,7 +1632,7 @@ img{
   }
   #mainbistrot h2{
     font-size: 16px;
-    color: #FB7826;
+    color: #B3FA84;
   }
   #mainbistrot p{
     font-size: 14px;
@@ -1629,16 +1641,16 @@ img{
     display: none;
   }
   .hr{ /* HR entre la Sec1 et la Se2, ajouter car il n'y a pas la même class*/
-    color: #FB7826;
+    color: #B3FA84;
     margin: 0.2em auto;
     width: 45%;
-    border: 2px solid #FB7826;
+    border: 2px solid #B3FA84;
   }
   .hrsection_bistrot{
-    color: #FB7826;
+    color: #B3FA84;
     margin: 0.2em auto;
     width: 45%;
-    border: 2px solid #FB7826;
+    border: 2px solid #B3FA84;
   }
   .sec2_bistrot{
     margin-bottom: -1.5em;

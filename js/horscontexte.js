@@ -50,19 +50,19 @@ document.getElementById('link3').onclick = function()
 };
 
 //================================LINK 4 ==============================/
-document.getElementById('link4').onmousedown = function()
-{
-    document.getElementById('section1').classList.remove('box-active');
-    document.getElementById('section2').classList.remove('box-active2');
-    document.getElementById('section3').classList.remove('box-active');
-};
-
-document.getElementById('link4').onclick = function()
-{
-    document.getElementById('section1').classList.add('box-active');
-    document.getElementById('section3').classList.add('box-active');
-    document.getElementById('section2').classList.add('box-active2');
-};
+// document.getElementById('link4').onmousedown = function()
+// {
+//     document.getElementById('section1').classList.remove('box-active');
+//     document.getElementById('section2').classList.remove('box-active2');
+//     document.getElementById('section3').classList.remove('box-active');
+// };
+//
+// document.getElementById('link4').onclick = function()
+// {
+//     document.getElementById('section1').classList.add('box-active');
+//     document.getElementById('section3').classList.add('box-active');
+//     document.getElementById('section2').classList.add('box-active2');
+// };
 
 //================================LINK 5 ==============================/
 document.getElementById('link5').onmousedown = function()
@@ -88,6 +88,20 @@ document.getElementById('link6').onmousedown = function()
 };
 
 document.getElementById('link6').onclick = function()
+{
+    document.getElementById('section1').classList.add('box-active');
+    document.getElementById('section3').classList.add('box-active');
+    document.getElementById('section2').classList.add('box-active2');
+};
+//================================LINK 7 ==============================/
+document.getElementById('link7').onmousedown = function()
+{
+    document.getElementById('section1').classList.remove('box-active');
+    document.getElementById('section2').classList.remove('box-active2');
+    document.getElementById('section3').classList.remove('box-active');
+};
+
+document.getElementById('link7').onclick = function()
 {
     document.getElementById('section1').classList.add('box-active');
     document.getElementById('section3').classList.add('box-active');
