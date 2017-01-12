@@ -13,6 +13,13 @@ $(document).ready(function(){
   $(function(){
     $('#boutonbistrot').click(function(){
       $('#mainbistrot').toggle('blind');
-      $('#mainbistrot').toggleClass('main_bistrot');
     });
   });
+  /*========================*/
+  /*   FERMETURE BISTROT    */
+  /*========================*/
+$(function(){
+  $('#fermer').click(function(){
+    $('#mainbistrot').hide('blind');
+  });
+});

@@ -1,5 +1,8 @@
 @import url(font-awesome.min.css);
-
+@font-face {
+	font-family: basictitlefont;
+	src:	url('../fonts/basictitlefont.ttf');
+}
 
 /*
 	Multiverse by HTML5 UP
@@ -168,7 +171,7 @@
 
 	body, input, select, textarea {
 		color: #a0a0a1;
-		font-family: "Lobster", Helvetica, sans-serif;
+		font-family: basictitlefont, Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
@@ -1201,7 +1204,7 @@
 			}
 
 			.poptrox-popup .caption p {
-				color: #ffffff;
+				color: #FB7826; /*couleur des paragraphes du viewer*/
 			}
 
 		.poptrox-popup .loader {
@@ -1426,7 +1429,7 @@
 
 			#header h1 a {
 				border: 0;
-				color: inherit;
+				color: #FB7826;
 			}
 
 				#header h1 a:hover {
@@ -1456,7 +1459,7 @@
 						-ms-transition: background-color 0.5s ease;
 						transition: background-color 0.5s ease;
 						border: 0;
-						color: #ffffff;
+						color: #FB7826;
 						display: inline-block;
 						letter-spacing: 0.1em;
 						padding: 0 1.65em;
@@ -1464,7 +1467,7 @@
 					}
 
 						#header nav > ul > li a.icon:before {
-							color: #505051;
+							color: #FB7826; /*couleur icone*/
 							float: right;
 							margin-left: 0.75em;
 						}
