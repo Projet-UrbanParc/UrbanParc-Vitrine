@@ -101,6 +101,10 @@ document.getElementById('link7').onclick = function() {
 //Effet Audio Acceuil
 $('#link1').click(function() {
     $('#' + $(this).attr('rel'))[0].play();
+    //requête Ajax
+    $('#section1').load("index.html #section1");
+    $('#section2').load("index.html #section2");
+    $('#section3').load("index.html #section3");
     // Animation CSS
     $('header').css({
         'border-bottom': '4px solid #FB7826',
@@ -142,6 +146,10 @@ $('#link1').click(function() {
 //Effet Audio Accrobranche
 $('#link2').click(function() {
     $('#' + $(this).attr('rel'))[0].play();
+    //requête Ajax
+    $('#section1').load("mains.html #sectionaccr1");
+    $('#section2').load("mains.html #sectionaccr2");
+    $('#section3').load("mains.html #sectionaccr3");
 
     // Animation CSS
     $('header').css({
@@ -184,6 +192,10 @@ $('#link2').click(function() {
 //Effet Audio Skatepark
 $('#link3').click(function() {
     $('#' + $(this).attr('rel'))[0].play();
+    //requête Ajax
+    $('#section1').load("mains.html #sectionskate1");
+    $('#section2').load("mains.html #sectionskate2");
+    $('#section3').load("mains.html #sectionskate3");
 
     // Animation CSS
     $('header').css({
@@ -231,6 +243,10 @@ $('#link4').click(function() {
 //Effet Audio Event
 $('#link5').click(function() {
     $('#' + $(this).attr('rel'))[0].play();
+    //requête Ajax
+    $('#section1').load("mains.html #sectionevent1");
+    $('#section2').load("mains.html #sectionevent2");
+    $('#section3').load("mains.html #sectionevent3");
 
     // Animation CSS
     $('header').css({
@@ -273,6 +289,10 @@ $('#link5').click(function() {
 //Effet Audio Anniversaire
 $('#link6').click(function() {
     $('#' + $(this).attr('rel'))[0].play();
+    //requête Ajax
+    $('#section1').load("mains.html #sectionann1");
+    $('#section2').load("mains.html #sectionann2");
+    $('#section3').load("mains.html #sectionann3");
 
     // Animation CSS
     $('header').css({
@@ -315,6 +335,10 @@ $('#link6').click(function() {
 //Effet Audio Trampo
 $('#link7').click(function() {
     $('#' + $(this).attr('rel'))[0].play();
+    //requête Ajax
+    $('#section1').load("mains.html #sectiontramp1");
+    $('#section2').load("mains.html #sectiontramp2");
+    $('#section3').load("mains.html #sectiontramp3");
 
     // Animation CSS
     $('header').css({
