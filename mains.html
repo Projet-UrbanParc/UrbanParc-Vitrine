@@ -7,6 +7,42 @@
 </head>
 
 <body>
+  <!-- ///////////////////////////////////////////////////////////////////// -->
+  <!-- Main Infos pratiques -->
+  <main>
+<!-- SECTION I -->
+    <section id='sectioninfo1'>
+      <!-- ARTICLE IMAGE -->
+          <article class="img_logo">
+            <img src="images/bghead.jpg" alt="Image Test">
+          </article>
+      <!-- ARTICLE TEXTE -->
+        <article class="txt_logo">
+            <h2 class="txt_infop">Informations Pratiques !</h2>
+            <p>17 rue Marcel Paul 30100 Alès.</p>
+            <p>( vous pouvez situez le lieu dans la map ci dessous !).</p>
+            <p>Tel: 04 . 66 . 43 . 35 . 76</p>
+            <p>Mail : urbanparc.ales@gmail.com</p>
+        </article>
+    </section>
+    <hr class="hrsection"/> <!--régler la hauteur min (min-height) dans le média query-->
+<!-- SECTION II -->
+    <section id='sectioninfo2' class='image_infos'>
+  <!-- Horraires/tarifs parc + acrobranche -->
+      <img src="images/horraires-tarifs.jpg" alt="Image Test">
+      <img src="images/acrobranche.png" alt="Image Test">
+    </section>
+
+    <hr class="hrsection"/>
+<!-- SECTION III -->
+    <section id='sectioninfo3' class='image_infos'>
+      <!-- Horraires/tarifs anniv + pass -->
+          <img src="images/tarifanniv.jpg" alt="Image Test">
+          <img src="images/urbanpass.jpg" alt="Image Test">
+    </section>
+    <hr class="hrsection"/>
+    </main>
+    <!-- ///////////////////////////////////////////////////////////////////// -->
     <!-- ///////////////////////////////////////////////////////////////////// -->
     <!-- Main Accrobranche -->
     <main id="mainacc">
@@ -49,7 +85,7 @@
             <!-- ARTICLE TEXTE -->
             <article class="text_sec">
                 <h2>FOREST PARC</h2>
-                <p>Continuez vos activitées aux coeur de la nature, suivez nous sur <a href="http://forestparc.com/forestparc.aspx?lang=fr" target="_blank">www.forestparc.com</a>
+                <p>Continuez vos activitées aux coeur de la nature, suivez nous sur <a href="http://forestparc.com/forestparc.aspx?lang=fr" target="_blank" class="lientxt">www.forestparc.com</a>
                 </p>
             </article>
         </section>
@@ -241,9 +277,18 @@
         <hr class="hrsection" />
         <!-- SECTION III -->
         <section id='sectionann3' class="section3">
-            <!-- ARTICLE MENU-->
-            <article class="menu">
-                <img src="images/wip.png" alt="Menu Test">
+            <!-- ARTICLE calendrier-->
+            <article class="calendrier">
+                <div id="calendar"></div>
+                <!-- CALENDRIER -->
+                <div id="dialog" title="Réservation">
+                    <!-- Pop up de reservation -->
+                    <label id="reserv" for="from">Date de réservation</label>
+                    <input type="text" id="from" name="from" value="">
+                    <div class="horaire" id="first">14h/16h</div>
+                    <div class="horaire" id="second">16h/18h</div>
+                    <input type="button" id="validate" value="Valider">
+                </div>
             </article>
             <!-- ARTICLE TEXTE -->
             <article class="text_sec">
@@ -255,6 +300,63 @@
         </section>
         <hr class="hrsection" />
     </main>
+    <!-- /////////////////////////////////////////////////////////////////////// -->
+    <!-- /////////////////////////////////////////////////////////////////////// -->
+    <!-- Qui sommes nous? -->
+    <main id="mainqui">
+      <!-- SECTION I -->
+        <section id="sectionqui1" class="section1">
+          <!-- ARTICLE IMAGE -->
+            <article class="img_sec">
+                <img src="images/peinture.jpg" alt="Image Test">
+            </article>
+          <!-- ARTICLE TEXTE -->
+            <article class="text_sec">
+              <h2>Qui sommes nous ?</h2>
+            <p>Une ancienne usine transformée en parc de loisirs en centre ville d' Alès : Accrobranche / Skatepark / Trampoline / Bistrot-Galerie.
+              1000 m2 indoor d'activités ludiques et sportives, encadrées par des animateurs et accessibles à partir de 3 ans.
+              Accessible à pied (5 min du multiplexe) ou en voiture (parking privé 50 places)
+              Urban Parc est LE spot pour se retrouver et passer un bon moment en famille ou entre amis.
+              Venez vite découvrir ce lieu unique en France !!!<br>
+              A très bientôt.<br>
+              L'équipe UP
+              </p>
+            </article>
+        </section>
+      <!-- FIN DE SECTION I -->
+        <hr class="hr_section">
+      <!-- SECTION II -->
+        <section id="sectionqui2" class="section22">
+          <!-- ARTICLE TEXT -->
+            <article class="text_sec">
+              <h2>Urban Parc</h2>
+              <p>A Urban Parc vous pouvez :<br>
+              - Pratiquer le roller, le skateboard, la trottinette, le bmx sur un skatepark en bois de 600 m2. Tout le matériel de glisse est disponible en location pour ceux qui n'en disposent pas.<br>
+              - Grimper dans parcours d'accrobranche indoor dans une structure métallique inédite qui dispose de 35 ateliers.<br>
+              - Vous restaurez au bistrot qui propose des encas et menus cuisinés avec des produits locaux et bio. Venez découvrir notre spécialités venus d'australie : Les Jaffles.<br>
+              - Admirez les fresques géantes réalisées par des artistes graffeurs de la région et parcourir les expositions d'artistes locaux dans la gallerie street art.<br>
+              Petits ou grands, en famille ou entre amis. Pour bouger, déguster, admirer, apprendre et partager. Tout le monde à une raison de passer à Urban Parc.
+              </p>
+            </article>
+          <!-- ARTICLE CALENDRIER -->
+            <article class="calendrier">
+                <img src="images/bgbody.jpg" alt="Image Test">
+            </article>
+        </section>
+      <!-- FIN DE SECTION II -->
+        <hr class="hr_section">
+      <!-- SECTION III -->
+        <section id="sectionqui3" class="section3">
+            <article class="img_sec">
+                <img src="images/bgmainsk8.jpg" alt="Menu Test">
+            </article>
+            <article class="text_sec">
+              <h2>En bref !</h2>
+              <p>Un lieu incontournable où se mélangent les sports de glisse, l'accrobranche, le street art et la bonne bouffe !!!
+              </p>
+            </article>
+        </section>
+      <!-- FIN DE SECTION III -->
 </body>
 
 </html>

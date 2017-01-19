@@ -43,20 +43,33 @@ document.getElementById('link3').onclick = function() {
     document.getElementById('section2').classList.add('box-active2');
 };
 
-//================================LINK 4 ==============================/
-// document.getElementById('link4').onmousedown = function()
-// {
-//     document.getElementById('section1').classList.remove('box-active');
-//     document.getElementById('section2').classList.remove('box-active2');
-//     document.getElementById('section3').classList.remove('box-active');
-// };
-//
-// document.getElementById('link4').onclick = function()
-// {
-//     document.getElementById('section1').classList.add('box-active');
-//     document.getElementById('section3').classList.add('box-active');
-//     document.getElementById('section2').classList.add('box-active2');
-// };
+//================================LINK 0 ==============================/
+document.getElementById('link0').onmousedown = function()
+{
+    document.getElementById('section1').classList.remove('box-active');
+    document.getElementById('section2').classList.remove('box-active2');
+    document.getElementById('section3').classList.remove('box-active');
+};
+
+document.getElementById('link0').onclick = function()
+{
+    document.getElementById('section1').classList.add('box-active');
+    document.getElementById('section3').classList.add('box-active');
+    document.getElementById('section2').classList.add('box-active2');
+};
+
+//================================LINK INFOS FOOTER ==============================/
+document.getElementById('link').onmousedown = function() {
+    document.getElementById('section1').classList.remove('box-active');
+    document.getElementById('section2').classList.remove('box-active2');
+    document.getElementById('section3').classList.remove('box-active');
+};
+
+document.getElementById('link').onclick = function() {
+    document.getElementById('section1').classList.add('box-active');
+    document.getElementById('section3').classList.add('box-active');
+    document.getElementById('section2').classList.add('box-active2');
+};
 
 //================================LINK 5 ==============================/
 document.getElementById('link5').onmousedown = function() {
@@ -96,8 +109,110 @@ document.getElementById('link7').onclick = function() {
     document.getElementById('section2').classList.add('box-active2');
 };
 
+//================================LINK qsn ==============================/
+document.getElementById('qsn').onmousedown = function() {
+    document.getElementById('section1').classList.remove('box-active');
+    document.getElementById('section2').classList.remove('box-active2');
+    document.getElementById('section3').classList.remove('box-active');
+};
+
+document.getElementById('qsn').onclick = function() {
+    document.getElementById('section1').classList.add('box-active');
+    document.getElementById('section3').classList.add('box-active');
+    document.getElementById('section2').classList.add('box-active2');
+};
+
+
 ///And Alx was Here!
-/// Effets sonore
+/// Effets sonore et requêtes Ajax
+/// LIEN INFOS
+$('#link0').click(function() {
+    //requête Ajax
+    $('#section1').load("mains.html #sectioninfo1");
+    $('#section2').load("mains.html #sectioninfo2");
+    $('#section3').load("mains.html #sectioninfo3");
+    // Animation CSS
+    $('header').css({
+        'border-bottom': '4px solid #FB7826',
+        'transition': '8s'
+    });
+    $('h1').css({
+        'color': '#FB7826',
+        'transition': '8s'
+    });
+    $('li').css({
+        'border-right': '2px solid #FB7826',
+        'transition': '8s'
+    });
+    $('.fa').css({
+        'color': '#FB7826',
+        'transition': '8s'
+    });
+    $('.hr_section').css({
+        'border': '4px solid #FB7826',
+        'transition': '8s'
+    });
+    $('.hr_footer').css({
+        'border': '4px solid #FB7826',
+        'transition': '8s'
+    });
+    $('.maps').css({
+        'border-top': '3px solid #FB7826',
+        'transition': '8s'
+    });
+    $('.barre').css({
+        'background': '#FB7826',
+        'transition': '8s'
+    });
+    $('h4').css({
+        'color': '#FB7826',
+        'transition': '8s'
+    });
+});
+// LIEN INFOS FOOTER
+$('#link').click(function() {
+    //requête Ajax
+    $('#section1').load("mains.html #sectioninfo1");
+    $('#section2').load("mains.html #sectioninfo2");
+    $('#section3').load("mains.html #sectioninfo3");
+    // Animation CSS
+    $('header').css({
+        'border-bottom': '4px solid #FB7826',
+        'transition': '8s'
+    });
+    $('h1').css({
+        'color': '#FB7826',
+        'transition': '8s'
+    });
+    $('li').css({
+        'border-right': '2px solid #FB7826',
+        'transition': '8s'
+    });
+    $('.fa').css({
+        'color': '#FB7826',
+        'transition': '8s'
+    });
+    $('.hr_section').css({
+        'border': '4px solid #FB7826',
+        'transition': '8s'
+    });
+    $('.hr_footer').css({
+        'border': '4px solid #FB7826',
+        'transition': '8s'
+    });
+    $('.maps').css({
+        'border-top': '3px solid #FB7826',
+        'transition': '8s'
+    });
+    $('.barre').css({
+        'background': '#FB7826',
+        'transition': '8s'
+    });
+    $('h4').css({
+        'color': '#FB7826',
+        'transition': '8s'
+    });
+});
 //Effet Audio Acceuil
 $('#link1').click(function() {
     $('#' + $(this).attr('rel'))[0].play();
@@ -138,8 +253,9 @@ $('#link1').click(function() {
         'background': '#FB7826',
         'transition': '8s'
     });
-    $('.titre_footer').css({
-        'background-image': 'url("images/skate2.png")',
+    $('.titre_footer h4').css({
+        'color': '#FB7826',
+        'transition': '8s'
     });
 });
 
@@ -184,8 +300,9 @@ $('#link2').click(function() {
         'background': '#4BA33C',
         'transition': '8s'
     });
-    $('.titre_footer').css({
-        'background-image': 'url("images/skateG.png")',
+    $('h4').css({
+        'color': '#4BA33C',
+        'transition': '8s'
     });
 });
 
@@ -230,8 +347,9 @@ $('#link3').click(function() {
         'background': '#0DB0C3',
         'transition': '8s'
     });
-    $('.titre_footer').css({
-        'background-image': 'url("images/skateA.png")',
+    $('h4').css({
+        'color': '#0DB0C3")',
+        'transition': '8s'
     });
 });
 
@@ -281,8 +399,8 @@ $('#link5').click(function() {
         'background': '#FC2A21',
         'transition': '8s'
     });
-    $('.titre_footer').css({
-        'background-image': 'url("images/skateR.png")',
+    $('h4').css({
+        'color': '#FC2A21")'
     });
 });
 
@@ -327,8 +445,9 @@ $('#link6').click(function() {
         'background': '#DC3FD1',
         'transition': '8s'
     });
-    $('.titre_footer').css({
-        'background-image': 'url("images/skateV.png")',
+    $('h4').css({
+        'color': '#DC3FD1")',
+        'transition': '8s'
     });
 });
 
@@ -373,8 +492,53 @@ $('#link7').click(function() {
         'background': '#673500',
         'transition': '8s'
     });
-    $('.titre_footer').css({
-        'background-image': 'url("images/skateM.png")',
+    $('h4').css({
+        'color': '#A07140")',
+        'text-shadow': '0.5px 0.5px white'
+    });
+});
+
+
+$('#qsn').click(function() {
+    //requête Ajax
+    $('#section1').load("mains.html #sectionqui1");
+    $('#section2').load("mains.html #sectionqui2");
+    $('#section3').load("mains.html #sectionqui3");
+    // Animation CSS
+    $('header').css({
+        'border-bottom': '4px solid #FB7826',
+        'transition': '8s'
+    });
+    $('h1').css({
+        'color': '#FB7826',
+        'transition': '8s'
+    });
+    $('li').css({
+        'border-right': '2px solid #FB7826',
+        'transition': '8s'
+    });
+    $('.fa').css({
+        'color': '#FB7826',
+        'transition': '8s'
+    });
+    $('.hr_section').css({
+        'border': '4px solid #FB7826',
+        'transition': '8s'
+    });
+    $('.hr_footer').css({
+        'border': '4px solid #FB7826',
+        'transition': '8s'
+    });
+    $('.maps').css({
+        'border-top': '3px solid #FB7826',
+        'transition': '8s'
+    });
+    $('.barre').css({
+        'background': '#FB7826',
+        'transition': '8s'
+    });
+    $('h4').css({
+        'color': '#FB7826")'
     });
 });
 
