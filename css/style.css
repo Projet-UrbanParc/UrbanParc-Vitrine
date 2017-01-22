@@ -660,6 +660,12 @@ img {
     footer a:hover {
         color: #FB7826;
     }
+
+    .rue_footer{/*Rajout après demande client le 22/01/17*/
+      font-size: 25px;
+      margin-left: 10px;
+    }
+
     h4 {
         margin-top: 0.20em;
         -image margin-left: 0.9em;
