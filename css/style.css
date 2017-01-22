@@ -528,6 +528,7 @@ img {
         z-index: 5;
         /* Ajouter pour pertubation du calendar (passe au travers)*/
         background-color: #151515;
+        border: 5px solid #B3FA84;
     }
     #mainbistrot article {
         -webkit-box-align: center;
