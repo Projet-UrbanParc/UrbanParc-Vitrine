@@ -133,6 +133,9 @@ $('#link0').click(function() {
     $('#section3').load("mains.html #sectioninfo3");
     // Animation CSS
     $('header').css({
+        'background-image': 'url("images/peinture.jpg")',
+        'background-size': 'cover',
+        'background-repeat': 'no-repeat',
         'border-bottom': '4px solid #FB7826',
         'transition': '8s'
     });
@@ -177,6 +180,9 @@ $('#link').click(function() {
     $('#section3').load("mains.html #sectioninfo3");
     // Animation CSS
     $('header').css({
+        'background-image': 'url("images/peinture.jpg")',
+        'background-size': 'cover',
+        'background-repeat': 'no-repeat',
         'border-bottom': '4px solid #FB7826',
         'transition': '8s'
     });
@@ -222,6 +228,9 @@ $('#link1').click(function() {
     $('#section3').load("index.html #section3");
     // Animation CSS
     $('header').css({
+        'background-image': 'url(images/bgbody.jpg)',
+        'background-size': 'cover',
+        'background-repeat': 'no-repeat',
         'border-bottom': '4px solid #FB7826',
         'transition': '8s'
     });
@@ -269,6 +278,9 @@ $('#link2').click(function() {
 
     // Animation CSS
     $('header').css({
+        'background-image': 'url("images/imgup/Accrobranche/UrbanPark-23.jpg")',
+        'background-size': 'cover',
+        'background-repeat': 'no-repeat',
         'border-bottom': '4px solid #4BA33C',
         'transition': '8s'
     });
@@ -316,6 +328,9 @@ $('#link3').click(function() {
 
     // Animation CSS
     $('header').css({
+        'background-image': 'url("images/imgup/sk8/UrbanPark-3.jpg")',
+        'background-size': 'cover',
+        'background-repeat': 'no-repeat',
         'border-bottom': '4px solid #0DB0C3',
         'transition': '8s'
     });
@@ -368,6 +383,9 @@ $('#link5').click(function() {
 
     // Animation CSS
     $('header').css({
+        'background-image': 'url("images/imgup/gallerie/UrbanPark-50.jpg")',
+        'background-size': 'cover',
+        'background-repeat': 'no-repeat',
         'border-bottom': '4px solid #FC2A21',
         'transition': '8s'
     });
@@ -414,6 +432,9 @@ $('#link6').click(function() {
 
     // Animation CSS
     $('header').css({
+        'background-image': 'url("images/imgup/gallerie/UrbanPark-15.jpg")',
+        'background-size': 'cover',
+        'background-repeat': 'no-repeat',
         'border-bottom': '4px solid #DC3FD1',
         'transition': '8s'
     });
@@ -461,6 +482,9 @@ $('#link7').click(function() {
 
     // Animation CSS
     $('header').css({
+        'background-image': 'url("images/wip.png")',
+        'background-size': 'cover',
+        'background-repeat': 'no-repeat',
         'border-bottom': '4px solid #673500',
         'transition': '8s'
     });
