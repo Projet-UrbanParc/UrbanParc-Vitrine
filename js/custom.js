@@ -5,14 +5,19 @@ $(document).ready(function(){
   });
 });
 /*=====================*/
-/*   TOGGLE BISTROT    */
+/*   TOGGLE BISTROT  & MAP (Iframe)  */
 /*=====================*/
 $(document).ready(function(){
   $('#mainbistrot').hide();
+  $('iframe').hide();
 });
   $(function(){
     $('#boutonbistrot').click(function(){
       $('#mainbistrot').toggle('blind');
+    });
+    $('.rue_footer').click(function(){
+      $('iframe').toggle('clip', 'slow');
+      return false;
     });
   });
   /*========================*/
