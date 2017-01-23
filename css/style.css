@@ -130,8 +130,12 @@
 
 /*=========*/
 
+body{
+  font-family: 'Futura';
+}
+
 p {
-    font-family: 'Mirza', cursive;
+    font-family: 'Eurostyle', cursive;
 }
 
 h2, h1, h4 {
@@ -195,7 +199,25 @@ img {
     color: #FB7826;
 }
 
+@font-face {
+    font-family: "Futura";
+    src: url("../fonts/FuturaHand.ttf");
+}
 
+@font-face {
+    font-family: "Futura1";
+    src: url("../fonts/Futura.ttf");
+}
+
+@font-face {
+    font-family: "ToxTypewriter";
+    src: url("../fonts/ToxTypewriter.ttf");
+}
+
+@font-face {
+    font-family: "Eurostyle";
+    src: url("../fonts/Eurostyle.ttf");
+}
 /*---------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -208,166 +230,186 @@ img {
 /*======================================*/
 
 @media all and (min-width: 1850px) {
-    /*========*/
-    /* HEADER */
-    /*========*/
-    header {
-        background-image: url('../images/bgbody.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-bottom: 4px solid #FB7826;
-        text-shadow: 4.5px 4.5px 1px black;
-    }
-    h1 {
-        text-align: center;
-        padding: 8%;
-        font-size: 80px;
-        color: #FB7826;
-    }
-    .titreH {
-        font-size: 180px;
-    }
-    .titreH1 {
-        font-size: 180px;
-        letter-spacing: -35px;
-    }
-    /* HOVER DES BOUTONS DE LA NAV */
-    .accueil:hover {
-        color: white;
-        background-color: rgba(253, 160, 41, 0.8);
-    }
-    .accrobranche:hover {
-        color: white;
-        background-color: rgba(75, 163, 60, 0.8);
-    }
-    .skatepark:hover {
-        color: white;
-        background-color: rgba(13, 176, 195, 0.8);
-    }
-    .trampo:hover {
-        color: white;
-        background-color: rgba(103, 53, 0, 0.8);
-    }
-    .evenement:hover {
-        color: white;
-        background-color: rgba(252, 42, 33, 0.8);
-    }
-    .anniversaire:hover {
-        color: white;
-        background-color: rgba(220, 63, 209, 0.8);
-    }
-    .media:hover {
-        color: white;
-        background-color: rgba(118, 108, 255, 0.8);
-    }
-    /*------------------------------------------------*/
-    /*=======*/
-    /*  NAV  */
-    /*=======*/
-    nav {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        position: fixed;
-        width: 100%;
-        text-align: center;
-        z-index: 4;
-    }
-    ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        background-color: rgba(225, 207, 187, 0.5);
-        height: 4.5em;
-        width: 100%;
-        list-style: none;
-    }
-    li {
-        height: 50%;
-        width: 50%;
-        list-style: none;
-        border-right: 2px solid #FB7826;
-    }
-    li:last-child {
-        border: none;
-    }
-    nav a {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        text-decoration: none;
-        font-family: 'Lobster', cursive;
-        background-color: rgba(202, 202, 202, 0.8);
-        border: 2px solid black;
-        border-radius: 30%;
-        width: 80%;
-        margin: auto;
-        padding: 0.2em;
-        font-size: 1.2em;
-        color: black;
-    }
-    /* LOGO INFO */
-    .information {
-        background-color: black;
-        border: 2px solid #FB7826;
-        border-radius: none;
-        width: 60%;
-        color: white;
-        margin-top: -0.75em;
-        margin-left: -0.06em;
-        -webkit-transform: rotate(-20deg);
-                transform: rotate(-20deg);
-        -webkit-transition: 0.5s;
-        transition: 0.5s;
-    }
-    .information:hover {
-        background-color: #FB7826;
-        border: 2px solid #000;
-        color: black;
-        -webkit-transition: 0.5s;
-        transition: 0.5s;
-        -webkit-transform: rotate(340deg);
-        transform: rotate(340deg);
-    }
-    /*------------------------------------------------*/
-    /*=============*/
-    /* DIV BISTROT */
-    /*=============*/
-    .titre_bistrot {
-        width: 14em;
-        height: 8em;
-        padding: 0.30em;
-        margin-right: -0.8em;
-        background-color: rgba(0, 0, 0, 0.8);
-        border-left: solid 3px #64C755;
-        border-bottom: solid 3px #64C755;
-        border-radius: 0px 0px 0px 25px;
-        color: white;
-        -webkit-transform: skewX(8deg);
-                transform: skewX(8deg);
-        cursor: pointer;
-    }
-    .titre_bistrot p {
-        height: 3em;
-        margin-top: 0.5em;
-        cursor: pointer;
-        font-family: 'Lobster', cursive;
-        font-size: 24px;
-        z-index: 1;
-    }
-    .titre_bistrot:hover {
-        text-shadow: 1px 1px 2px #64C755;
-        box-shadow: -1px 2.5px 4px #fff;
-    }
+  /*========*/
+ /* HEADER */
+ /*========*/
+ header {
+     background-image: url('../images/bgbody.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-bottom: 4px solid #FB7826;
+     text-shadow: 4.5px 4.5px 1px black;
+ }
+ h1 {
+     text-align: center;
+     padding: 8%;
+     font-size: 80px;
+     color: #FB7826;
+ }
+ .titreH {
+     font-size: 180px;
+ }
+ .titreH1 {
+     font-size: 180px;
+     letter-spacing: -35px;
+ }
+ /* HOVER DES BOUTONS DE LA NAV */
+ .accueil:hover {
+     background-color: rgba(253, 160, 41, 0.8);
+ }
+ .accrobranche:hover {
+     background-color: rgba(75, 163, 60, 0.8);
+ }
+ .skatepark:hover {
+     background-color: rgba(13, 176, 195, 0.8);
+ }
+ .trampo:hover {
+     background-color: rgba(103, 53, 0, 0.8);
+ }
+ .tarif:hover {
+     background-color: rgba(0, 0, 0, 0.8);
+ }
+ .evenement:hover {
+     background-color: rgba(252, 42, 33, 0.8);
+ }
+ .anniversaire:hover {
+     background-color: rgba(220, 63, 209, 0.8);
+ }
+ .media:hover {
+     background-color: rgba(118, 108, 255, 0.8);
+ }
+ .groupes:hover{
+     background-color: rgba(98, 95, 95, 0.8);
+ }
+ li a:hover{
+     color: #fff;
+ }
+ /*------------------------------------------------*/
+ /*=======*/
+ /*  NAV  */
+ /*=======*/
+ nav {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-pack: distribute;
+     justify-content: space-around;
+     text-shadow: none;
+     position: fixed;
+     text-align: center;
+     width: 100%;
+     z-index: 4;
+ }
+ ul {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     background-color: rgba(225, 207, 187, 0.8);
+     height: 4.5em;
+     width: 100%;
+     list-style: none;
+ }
+ li {
+     display: flex;
+     justify-content: center;
+     height: 100%;
+     width: 50%;
+     list-style: none;
+     border-right: 2px solid #FB7826;
+ }
+ li:last-child {
+     border: none;
+ }
+ nav a {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-pack: distribute;
+     justify-content: space-around;
+     align-self: center;
+     text-decoration: none;
+     width: 80%;
+     font-size: 1.4em;
+     color: black;
+ }
+ /*------------------------------------------------*/
+ /*=============*/
+ /* DIV BISTROT */
+ /*=============*/
+ .titre_bistrot {
+     width: 10em;
+     height: 8em;
+     padding: 0.25em;
+     margin-right: -0.8em;
+     background-color: rgba(0, 0, 0, 0.9);
+     border-left: solid 3px #64C755;
+     border-bottom: solid 3px #64C755;
+     border-radius: 0px 0px 0px 25px;
+     color: white;
+     -webkit-transform: skewX(8deg);
+     transform: skewX(8deg);
+     cursor: pointer;
+ }
+ .titre_bistrot p {
+     font-family: "ToxTypewriter";
+     height: 3em;
+     margin-right: 0.5em;
+     cursor: pointer;
+     font-size: 20px;
+     z-index: 1;
+ }
+ .titre_bistrot:hover {
+     text-shadow: 1px 1px 2px #64C755;
+     box-shadow: -1px 2.5px 4px #fff;
+ }
+ #boutonbistrot {
+     margin-top: 0.5em;
+ }
+ /*  BOUTON FC/INFO  */
+ .header_bouton {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     flex-direction: row;
+     -webkit-box-pack: end;
+     -ms-flex-pack: end;
+     justify-content: space-between;
+     -webkit-box-align: end;
+     -ms-flex-align: end;
+     align-items: flex-end;
+     height: 5em;
+     padding: 0;
+     margin: 0;
+ }
+ .fb_header {
+     padding: 0.8em;
+     font-size: 18px;
+     border-radius: 35px 0px 0px 0px;
+     border-top: 3px solid #1A26B0;
+     border-left: 3px solid #1A26B0;
+     background-color: black;
+ }
+ .fb_header i {
+     margin: 0.5em;
+ }
+ .fb_header a {
+     color: #fff;
+ }
+ .information{
+     text-shadow: none;
+     font-size: 24px;
+     color: #fff;
+ }
+ .information:hover{
+     color: #FB7826;
+ }
+ .info_header{
+     border-radius: 0px 20px 0px 0px;
+     border-right: 3px solid #E60000;
+     border-top: 3px solid #E60000;
+     background-color: black;
+     padding: 0.5em;
+ }
     /*------------------------------------------------*/
     /*==================*/
     /*  MILIEU DE PAGE  */

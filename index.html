@@ -30,37 +30,51 @@
         <audio id="son5" src="audio/ambevent.ogg"></audio>
         <audio id="son6" src="audio/sonannif.ogg"></audio>
         <audio id="son7" src="audio/sontrampo.ogg"></audio>
-        <!-- NAVIGATION -->
-        <nav>
-            <ul>
-                <li><a id='link8' rel="son8" href="#" class="information">Informations et Tarifs</a></li>
-                <li><a id='link1' rel="son1" href="#" class="accueil">Accueil</a></li>
-                <li><a id='link2' rel="son2" href="#" class="accrobranche">Accrobranche</a></li>
-                <li><a id='link3' rel="son3" href="#" class="skatepark">SkatePark</a></li>
-                <li><a id='link7' rel="son7" href="#" class="trampo">Trampoline</a></li>
-                <li><a id='link0' rel="son0" href="#" class="tarifs">Tarifs</a></li>
-                <li><a id='link5' rel="son5" href="#" class="evenement">Evènement</a></li>
-                <li><a id='link6' rel="son6" href="#" class="anniversaire">Anniversaire</a></li>
-                <li><a href="media.html" class="media">Media</a></li>
-            </ul>
-            <div class="titre_bistrot">
-                <i class="fa fa-bell-slash" id="mute" aria-hidden="true"></i>
-                <!--Bouton mute transformé en lien-->
-                <div id="boutonbistrot">
-                    <p id="link4" rel="son4" href="#">Bistro<br/><span>de l'Urban Park</span></p>
-                </div>
-            </div>
-        </nav>
-        <!-- MENU BURGER PORTABLE -->
-        <div class="btn-navigation">
-            <div class="barre"></div>
-            <div class="barre"></div>
-            <div class="barre"></div>
-        </div>
-        <!-- HEADER -->
-        <header id="header">
-            <h1><span class="titreH">U</span>rban <span class="titreH1">P</span>arc</h1>
-        </header>
+        <header>
+  			<!-- NAVIGATION -->
+  			<nav>
+  				<ul><!--Mettre les id et rel des links dans les li-->
+  					<li class="accueil"><a id='link1' rel="son1" href="#">Accueil</a></li>
+  					<li class="accrobranche" id='link2' rel="son2"><a href="#">Accrobranche</a></li>
+  					<li class="skatepark"><a id='link3' rel="son3" href="#">SkatePark</a></li>
+  					<li class="trampo"><a id='link7' rel="son7" href="#">Trampoline</a></li>
+  					<li class="tarif"><a id='link0' rel="son0" href="#">Tarifs</a></li>
+  					<li class="anniversaire"><a id='link6' rel="son6" href="#">Anniversaire</a></li>
+  					<li class="evenement"><a id='link5' rel="son5" href="#">Event</a></li>
+  					<li class="groupes"><a id='link8' rel="son8" href="#">Groupes</a></li>
+  					<li class="media"><a href="media.html">Photo/Vidéo</a></li>
+  				</ul>
+  				<div class="titre_bistrot">
+  					<i class="fa fa-bell-slash" id="mute" aria-hidden="true"></i>
+  					<!--Bouton mute transformé en lien-->
+  					<div id="boutonbistrot">
+  						<p id="link4" rel="son4" href="#">Bistro<br/><span>de l'Urban Park</span></p>
+  					</div>
+  				</div>
+  			</nav>
+  			<!-- MENU BURGER PORTABLE -->
+  			<div class="btn-navigation">
+  				<div class="barre"></div>
+  				<div class="barre"></div>
+  				<div class="barre"></div>
+  			</div>
+  			<h1><span class="titreH">U</span>rban <span class="titreH1">P</span>arc</h1>
+  			<article class="header_bouton">
+  				<div class="info_header">
+  					<a id='link0' rel="son0" href="#" class="information">Informations</a>
+  				</div>
+  				<div class="fb_header">
+  					<div class="bouton_facebook">
+  						<div>
+  							<a href="https://www.facebook.com/urbanparc/" target="_blank" class="fc"><i class="fa fa-facebook-official"></i>Urban Parc</a>
+  						</div>
+  						<div>
+  							<a href="" target="_blank" class="fc"><i class="fa fa-facebook-official"></i>Bistrot</a>
+  						</div>
+  					</div>
+  				</div>
+  			</article>
+  		</header>
         <!--===============================================================-->
         <!-- MAIN BISTROT -->
         <main id="mainbistrot">
@@ -130,7 +144,7 @@
                     <h2>NEW</h2>
                     <p>  Une ancienne usine transformée en Parc de Loisirs en centre-ville d' Alès (à 5min à pied du Cinéplanet) : Bienvenue à URBAN PARC, un lieu incontournable où se mélangent les Sports de Glisse, l'Accrobranche, le Street-Art et la bonne bouffe !</br>
                     1000 m2 indoor d’activités de loisirs encadrées par des animateurs et accessibles à partir de 3 ans :</br>
-                    - Roller, Skateboard, Trottinette, BMX sur un Skatepark en bois de 600 m2.</br> Tout le matériel de glisse est disponible en location pour ceux qui n'en disposent pas.</br> 
+                    - Roller, Skateboard, Trottinette, BMX sur un Skatepark en bois de 600 m2.</br> Tout le matériel de glisse est disponible en location pour ceux qui n'en disposent pas.</br>
                     - 2 parcours Accrobranche sur une structure métallique inédite de 200m2 : 35 ateliers dont 2 tyroliennes de 20m</br>
                     - Un Bistrot qui propose des menus cuisinés avec des produits locaux et bios. Venez découvrir notre spécialité venue d'Australie : le Jaffle.</br>
                     - Galerie Street-Art: fresques géantes réalisées par des artistes graffeurs de la région, expositions d'artistes locaux, évènements culturels (concerts, théâtre, impro, projections…)</br>
@@ -144,7 +158,7 @@
                 <!-- ARTICLE TEXT -->
                 <article class="text_sec">
                     <h2>DECOUVREZ L'ACCROBRANCHE INDOOR!</h2>
-                    <p>  2 parcours à 2m et 4m du sol pour enfants (taille minimum: 1m), ados et adultes. 35 ateliers en hauteur: filets, ponts de singe, tonneaux, poutres...</br> Et 2 tyroliennes de 20m de long !</br> Equipement, consignes de sécurité et surveillance assurées par un moniteur diplômé.</br>Il fait beau, il fait chaud? L'appel de la nature est plus forte que tout? Alors suivez-nous aussi sur <a href="http://forestparc.com/forestparc.aspx?lang=fr" target="_blank" class="lientxt">www.forestparc.com</a>!</p>
+                    <p>  2 parcours à 2m et 4m du sol pour enfants (taille minimum: 1m), ados et adultes. </br>35 ateliers en hauteur: filets, ponts de singe, tonneaux, poutres...</br> Et 2 tyroliennes de 20m de long !</br> Equipement, consignes de sécurité et surveillance assurées par un moniteur diplômé.</br>Il fait beau, il fait chaud? L'appel de la nature est plus forte que tout? Alors suivez-nous aussi sur <a href="http://forestparc.com/forestparc.aspx?lang=fr" target="_blank" class="lientxt">www.forestparc.com</a>!</p>
                 </article>
                 <!-- ARTICLE IMAGE -->
                 <article class="img_sec">
