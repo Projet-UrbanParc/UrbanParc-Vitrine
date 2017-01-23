@@ -141,12 +141,12 @@ document.getElementById('qsn').onclick = function() {
 
 ///And Alx was Here!
 /// Effets sonore et requêtes Ajax
-/// LIEN INFOS
+/// LIEN TARIFS
 $('#link0').click(function() {
     //requête Ajax
-    $('#section1').load("mains.html #sectioninfo1");
-    $('#section2').load("mains.html #sectioninfo2");
-    $('#section3').load("mains.html #sectioninfo3");
+    $('#section1').load("mains.html #sectiontarifs1");
+    $('#section2').load("mains.html #sectiontarifs2");
+    $('#section3').load("mains.html #sectiontarifs3");
     // Animation CSS
     $('header').css({
         'background-image': 'url("images/peinture.jpg")',

@@ -997,30 +997,7 @@ img {
         margin-top: -3em;
     }
     /*INFOS */
-    .txt_infop {
-        font-size: 2.5em;
-        color: #FB7826;
-        text-shadow: 4.5px 4.5px 1px black;
-    }
-    .txt_logo {
-        margin-left: 5em;
-        margin-top: 2em;
-    }
-    .txt_logo h2 {
-        font-size: 3em;
-        font-family: 'Lobster', cursive;
-    }
-    .txt_logo p {
-        font-size: 1.25em;
-    }
-    .img_logo {
-        margin-left: 5em;
-        height: 10em;
-        width: 85em;
-    }
-    .image_infos img {
-        margin-left: 3em;
-    }
+
     /*fin infos */
     /*------------------------------------------------*/
     /*=======================*/
