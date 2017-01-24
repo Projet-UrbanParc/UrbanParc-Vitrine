@@ -139,7 +139,7 @@ p {
 }
 
 h2, h1, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Futura', cursive;
 }
 
 a {
@@ -459,6 +459,7 @@ img {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+        align-items: center;
         height: 19em;
         padding: 2%;
     }
@@ -469,10 +470,17 @@ img {
         font-size: 24px;
     }
     .img_sec {
+      display: flex;
+      align-items: center;
+      justify-content: center;
         -webkit-box-flex: 1;
             -ms-flex: 1;
                 flex: 1;
         width: 50%;
+    }
+    .text_sec{
+      display: flex;
+      align-items: center;
     }
     .text_sec, .calendrier {
         /*calendrier déplacé dans main anniversaire*/
@@ -589,7 +597,7 @@ img {
     }
     #mainbistrot p {
         text-align: left;
-        font-family: 'Mirza', cursive;
+        font-family: 'ToxTypewriter', cursive;
         font-size: 22px;
     }
     #mainbistrot img {
