@@ -297,6 +297,7 @@ $('#link1').click(function() {
         'color': '#FB7826',
         'transition': '8s'
     });
+
 });
 
 //Effet Audio Accrobranche

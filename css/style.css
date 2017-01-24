@@ -8,83 +8,83 @@
 
 .box-active {
     -webkit-animation-name: translateInRight;
-            animation-name: translateInRight;
+    animation-name: translateInRight;
     -webkit-animation-duration: 5s;
-            animation-duration: 5s;
+    animation-duration: 5s;
     -webkit-animation-iteration-count: revert;
-            animation-iteration-count: revert;
+    animation-iteration-count: revert;
 }
 
 .box-active2 {
     -webkit-animation-name: translateInLeft;
-            animation-name: translateInLeft;
+    animation-name: translateInLeft;
     -webkit-animation-duration: 4s;
-            animation-duration: 4s;
+    animation-duration: 4s;
     -webkit-animation-iteration-count: revert;
-            animation-iteration-count: revert;
+    animation-iteration-count: revert;
 }
 
 @-webkit-keyframes translateInRight {
     0% {
         -webkit-transform: translateX(0%);
-                transform: translateX(0%);
+        transform: translateX(0%);
         visibility: visible;
     }
     50% {
         -webkit-transform: translateX(+150%);
-                transform: translateX(+150%);
+        transform: translateX(+150%);
     }
     100% {
         -webkit-transform: translateX(0%);
-                transform: translateX(0%);
+        transform: translateX(0%);
     }
 }
 
 @keyframes translateInRight {
     0% {
         -webkit-transform: translateX(0%);
-                transform: translateX(0%);
+        transform: translateX(0%);
         visibility: visible;
     }
     50% {
         -webkit-transform: translateX(+150%);
-                transform: translateX(+150%);
+        transform: translateX(+150%);
     }
     100% {
         -webkit-transform: translateX(0%);
-                transform: translateX(0%);
+        transform: translateX(0%);
     }
 }
 
 @-webkit-keyframes translateInLeft {
     0% {
         -webkit-transform: translateX(0%);
-                transform: translateX(0%);
+        transform: translateX(0%);
         visibility: visible;
     }
     50% {
         -webkit-transform: translateX(-175%);
-                transform: translateX(-175%)
+        transform: translateX(-175%)
     }
     100% {
         -webkit-transform: translateX(0%);
-                transform: translateX(0%);
+        transform: translateX(0%);
     }
 }
 
 @keyframes translateInLeft {
     0% {
         -webkit-transform: translateX(0%);
-                transform: translateX(0%);
+        transform: translateX(0%);
         visibility: visible;
     }
     50% {
         -webkit-transform: translateX(-175%);
-                transform: translateX(-175%)
+        transform: translateX(-175%)
     }
     100% {
         -webkit-transform: translateX(0%);
-                transform: translateX(0%);
+        transform: translateX(0%);
     }
 }
 
@@ -130,16 +130,12 @@
 
 /*=========*/
 
-body{
-  font-family: 'Futura';
+body {
+    font-family: 'Futura';
 }
 
 p {
     font-family: 'Eurostyle', cursive;
-}
-
-h2, h1, h4 {
-    font-family: 'Futura', cursive;
 }
 
 a {
@@ -172,20 +168,22 @@ img {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .text_sec {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex: 2;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .lientxt {
@@ -218,6 +216,11 @@ img {
     font-family: "Eurostyle";
     src: url("../fonts/Eurostyle.ttf");
 }
+
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+
 /*---------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -229,1074 +232,764 @@ img {
 
 /*======================================*/
 
-@media all and (min-width: 1850px) {
+
+/*@media all and (min-width: 1850px) {
   /*========*/
- /* HEADER */
- /*========*/
- header {
-     background-image: url('../images/bgbody.jpg');
-     background-size: cover;
-     background-repeat: no-repeat;
-     border-bottom: 4px solid #FB7826;
-     text-shadow: 4.5px 4.5px 1px black;
- }
- h1 {
-     text-align: center;
-     padding: 8%;
-     font-size: 80px;
-     color: #FB7826;
- }
- .titreH {
-     font-size: 180px;
- }
- .titreH1 {
-     font-size: 180px;
-     letter-spacing: -35px;
- }
- /* HOVER DES BOUTONS DE LA NAV */
- .accueil:hover {
-     background-color: rgba(253, 160, 41, 0.8);
- }
- .accrobranche:hover {
-     background-color: rgba(75, 163, 60, 0.8);
- }
- .skatepark:hover {
-     background-color: rgba(13, 176, 195, 0.8);
- }
- .trampo:hover {
-     background-color: rgba(103, 53, 0, 0.8);
- }
- .tarif:hover {
-     background-color: rgba(0, 0, 0, 0.8);
- }
- .evenement:hover {
-     background-color: rgba(252, 42, 33, 0.8);
- }
- .anniversaire:hover {
-     background-color: rgba(220, 63, 209, 0.8);
- }
- .media:hover {
-     background-color: rgba(118, 108, 255, 0.8);
- }
- .groupes:hover{
-     background-color: rgba(98, 95, 95, 0.8);
- }
- li a:hover{
-     color: #fff;
- }
- /*------------------------------------------------*/
- /*=======*/
- /*  NAV  */
- /*=======*/
- nav {
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     -ms-flex-pack: distribute;
-     justify-content: space-around;
-     text-shadow: none;
-     position: fixed;
-     text-align: center;
-     width: 100%;
-     z-index: 4;
- }
- ul {
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     background-color: rgba(225, 207, 187, 0.8);
-     height: 4.5em;
-     width: 100%;
-     list-style: none;
- }
- li {
-     display: flex;
-     justify-content: center;
-     height: 100%;
-     width: 50%;
-     list-style: none;
-     border-right: 2px solid #FB7826;
- }
- li:last-child {
-     border: none;
- }
- nav a {
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     -ms-flex-pack: distribute;
-     justify-content: space-around;
-     align-self: center;
-     text-decoration: none;
-     width: 80%;
-     font-size: 1.4em;
-     color: black;
- }
- /*------------------------------------------------*/
- /*=============*/
- /* DIV BISTROT */
- /*=============*/
- .titre_bistrot {
-     width: 10em;
-     height: 8em;
-     padding: 0.25em;
-     margin-right: -0.8em;
-     background-color: rgba(0, 0, 0, 0.9);
-     border-left: solid 3px #64C755;
-     border-bottom: solid 3px #64C755;
-     border-radius: 0px 0px 0px 25px;
-     color: white;
-     -webkit-transform: skewX(8deg);
-     transform: skewX(8deg);
-     cursor: pointer;
- }
- .titre_bistrot p {
-     font-family: "ToxTypewriter";
-     height: 3em;
-     margin-right: 0.5em;
-     cursor: pointer;
-     font-size: 20px;
-     z-index: 1;
- }
- .titre_bistrot:hover {
-     text-shadow: 1px 1px 2px #64C755;
-     box-shadow: -1px 2.5px 4px #fff;
- }
- #boutonbistrot {
-     margin-top: 0.5em;
- }
- /*  BOUTON FC/INFO  */
- .header_bouton {
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     flex-direction: row;
-     -webkit-box-pack: end;
-     -ms-flex-pack: end;
-     justify-content: space-between;
-     -webkit-box-align: end;
-     -ms-flex-align: end;
-     align-items: flex-end;
-     height: 5em;
-     padding: 0;
-     margin: 0;
- }
- .fb_header {
-     padding: 0.8em;
-     font-size: 18px;
-     border-radius: 35px 0px 0px 0px;
-     border-top: 3px solid #1A26B0;
-     border-left: 3px solid #1A26B0;
-     background-color: black;
- }
- .fb_header i {
-     margin: 0.5em;
- }
- .fb_header a {
-     color: #fff;
- }
- .information{
-     text-shadow: none;
-     font-size: 24px;
-     color: #fff;
- }
- .information:hover{
-     color: #FB7826;
- }
- .info_header{
-     border-radius: 0px 20px 0px 0px;
-     border-right: 3px solid #E60000;
-     border-top: 3px solid #E60000;
-     background-color: black;
-     padding: 0.5em;
- }
-    /*------------------------------------------------*/
-    /*==================*/
-    /*  MILIEU DE PAGE  */
-    /*==================*/
-    main {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        overflow: hidden;
-    }
-    main section {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        margin: 3em auto;
-    }
-    section {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        height: auto;
-        width: 90%;
-    }
-    article {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        align-items: center;
-        height: 19em;
-        padding: 2%;
-    }
-    article p {
-        font-size: 20px;
-    }
-    h2 {
-        font-size: 24px;
-    }
-    .img_sec {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-        -webkit-box-flex: 1;
-            -ms-flex: 1;
-                flex: 1;
-        width: 50%;
-    }
-    .text_sec{
-      display: flex;
-      align-items: center;
-    }
-    .text_sec, .calendrier {
-        /*calendrier déplacé dans main anniversaire*/
-        -webkit-box-flex: 2;
-            -ms-flex: 2;
-                flex: 2;
-        height: 12.5em;
-    }
-    .text_sec p {
-        text-indent: 1.250em;
-    }
-    .hr_section {
-        width: 60%;
-        margin: 8em;
-        border: 4px solid #FB7826;
-    }
-    .calendrier img {
-        height: 50em;
-        width: 70%;
-        margin-left: 8em;
-    }
-    /* SECTION MAIN REGLAGE */
-    .section1 {
-        margin-bottom: -3em;
-    }
-    .section2 {
-        margin-bottom: 5em;
-    }
-    .section3 {
-        margin-top: -3em;
-    }
-    /*INFOS */
-    .txt_infop {
-        font-size: 5.000em;
-        color: #FB7826;
-        text-shadow: 4.5px 4.5px 1px black;
-    }
-    .txt_logo {
-        margin-left: 10em;
-        margin-top: 2em;
-    }
-    .txt_logo h2 {
-        font-size: 45px;
-        font-family: 'Lobster', cursive;
-    }
-    .txt_logo p {
-        font-size: 28px;
-        margin-top: 0.8em;
-    }
-    .img_logo {
-        margin-left: 10em;
-    }
-    .image_infos img {
-        margin-left: 3em;
-    }
-    /* FINS INFO */
-    /* SITE EN CONSTRUCTION */
-    .construction img {
-        width: 100%;
-        margin-top: 3em;
-        margin-left: 2em;
-    }
-    .siteconstruction {
-        margin-top: 7em;
-        margin-bottom: 5em;
-        margin-left: 6em;
-    }
-    .siteconstruction p {
-        font-size: 28px;
-        text-align: center;
-    }
-    .siteconstruction h2 {
-        text-align: center;
-        font-size: 40px;
-        margin-bottom: 1em;
-    }
-    /* FIN CONSTRUCTION*/
-    /*------------------------------------------------*/
-    /*=======================*/
-    /*  MAIN BISTROT TOGGLE  */
-    /*=======================*/
-    #mainbistrot {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        position: fixed;
-        text-align: center;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 5;
-        /* Ajouter pour pertubation du calendar (passe au travers)*/
-        background-color: #151515;
-        border: 5px solid #B3FA84;
-    }
-    #mainbistrot article {
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        margin: 0.5em auto;
-        width: 80%;
-        color: white;
-    }
-    #mainbistrot section {
-        margin: -0.5em;
-    }
-    #mainbistrot h2 {
-        font-size: 28px;
-        color: #B3FA84;
-    }
-    #mainbistrot p {
-        text-align: left;
-        font-family: 'ToxTypewriter', cursive;
-        font-size: 22px;
-    }
-    #mainbistrot img {
-        margin: 0.5em auto;
-        width: 90%;
-        height: 80%;
-    }
-    #mainbistrot .sec_bistrot {
-        margin-top: 16em;
-    }
-    #mainbistrot .sec2_bistrot {
-        margin-left: 3em;
-    }
-    article .img_txt {
-        margin-top: 0.5em;
-    }
-    .hrsection_bistrot {
-        margin: 1em auto;
-        width: 45%;
-        border: 1px solid #B3FA84;
-    }
-    .hr {
-        /* HR entre la Sec1 et la Se2, enlever*/
-        display: none;
-    }
-    .sec_bistrot {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        width: 100%;
-    }
-    .sec1_bistrot, .sec2_bistrot {
-        margin: 0.5em auto;
-    }
-    .sec1_bistrot {
-        border-right: 2px solid #B3FA84;
-    }
-    .sec3_bistrot {
-        width: 40%;
-    }
-    /*------------------------------------------------*/
-    /*=========================*/
-    /* CROIX FERMETURE BISTROT */
-    /*=========================*/
-    #mainbistrot .fa-times-circle {
-        margin-top: 0.5em;
-        margin-left: 22em;
-        margin-bottom: -2em;
-        -webkit-transition: 0.5s;
-        transition: 0.5s;
-        font-size: 80px;
-        color: #B3FA84;
-        cursor: pointer;
-        z-index: 6;
-    }
-    #mainbistrot .fa-times-circle:hover {
-        color: #F51810;
-        -webkit-transition: 0.5s;
-        transition: 0.5s;
-    }
-    /*------------------------------------------------*/
-    /*========*/
-    /*  MAPS  */
-    /*========*/
-    .maps {
-        width: 100%;
-        border-top: 3px solid #FB7826;
-        border-radius: 10px 10px 0px 0px;
-        height: 400px;
-    }
-    /*------------------------------------------------*/
-    /*==========*/
-    /*  FOOTER  */
-    /*==========*/
-    footer {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-align: baseline;
-            -ms-flex-align: baseline;
-                align-items: baseline;
-        background-color: #222;
-        padding: 1em auto;
-    }
-    footer section {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        margin: 1em auto;
-    }
-    footer p {
-        font-size: 25px;
-        margin: 0.4em;
-        color: white;
-    }
-    footer a {
-        font-size: 18px;
-        margin: 0.05em;
-        color: #fff;
-    }
-    footer a:hover {
-        color: #FB7826;
-    }
 
-    .rue_footer{/*Rajout après demande client le 22/01/17*/
-      font-size: 25px;
-      margin-left: 10px;
-    }
 
-    h4 {
-        margin-top: 0.20em;
-        -image margin-left: 0.9em;
-        font-size: 25px;
-        color: white;
-    }
-    .fa {
-        color: #FB7826;
-    }
-    .contenue {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        margin: 1em auto;
-    }
-    .hr_footer {
-        display: none;
-    }
-    .fa-facebook-official {
-        -webkit-transition: 0.7s;
-        transition: 0.7s;
-        margin-right: 1em;
-    }
-    .fa-facebook-official:hover {
-        color: #395794;
-        -webkit-transition: 0.7s;
-        transition: 0.7s;
-    }
-    /*==============*/
-    /*     FOOTER   */
-    /*==============*/
-    .titre_voir {
-        color: #FB7826;
-        margin-right: 3em;
-    }
-    .titre_local h4 {
-        color: #FB7826;
-        margin-right: 1em;
-    }
-    .titre_urban h4 {
-        color: #FB7826;
-        background-size: 9em;
-        background-repeat: no-repeat;
-    }
-    .titre_partenaire h4 {
-        color: #FB7826;
-        background-size: 9em;
-        background-repeat: no-repeat;
-        margin-bottom: 1em;
-        margin-left: 2em;
-    }
-    .titre_suivre h4 {
-        color: #FB7826;
-        background-size: 9em;
-        background-repeat: no-repeat;
-        margin-bottom: 1em;
-        margin-right: 2em;
-    }
+/* HEADER */
+
+
+/*========*/
+
+header {
+    background-image: url('../images/bgbody.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 4px solid #FB7826;
+    text-shadow: 4.5px 4.5px 1px black;
+}
+
+h1 {
+    text-align: center;
+    padding: 8%;
+    font-size: 80px;
+    color: #FB7826;
+}
+
+.titreH {
+    font-size: 180px;
+}
+
+.titreH1 {
+    font-size: 180px;
+    letter-spacing: -35px;
 }
 
 
+/* HOVER DES BOUTONS DE LA NAV */
+
+.accueil:hover {
+    background-color: rgba(253, 160, 41, 0.8);
+}
+
+.accrobranche:hover {
+    background-color: rgba(75, 163, 60, 0.8);
+}
+
+.skatepark:hover {
+    background-color: rgba(13, 176, 195, 0.8);
+}
+
+.trampo:hover {
+    background-color: rgba(103, 53, 0, 0.8);
+}
+
+.tarif:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.evenement:hover {
+    background-color: rgba(252, 42, 33, 0.8);
+}
+
+.anniversaire:hover {
+    background-color: rgba(220, 63, 209, 0.8);
+}
+
+.media:hover {
+    background-color: rgba(118, 108, 255, 0.8);
+}
+
+.groupes:hover {
+    background-color: rgba(98, 95, 95, 0.8);
+}
+
+li a:hover {
+    color: #fff;
+}
+
+
+/*------------------------------------------------*/
+
+
+/*=======*/
+
+
+/*  NAV  */
+
+
+/*=======*/
+
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-shadow: none;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 4;
+}
+
+ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: rgba(225, 207, 187, 0.8);
+    height: 4.5em;
+    width: 100%;
+    list-style: none;
+}
+
+li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    list-style: none;
+    border-right: 2px solid #FB7826;
+}
+
+li:last-child {
+    border: none;
+}
+
+nav a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-decoration: none;
+    width: 80%;
+    font-size: 1.4em;
+    color: black;
+}
+
+
+/*------------------------------------------------*/
+
+
+/*=============*/
+
+
+/* DIV BISTROT */
+
+
+/*=============*/
+
+.titre_bistrot {
+    width: 10em;
+    height: 8em;
+    padding: 0.25em;
+    margin-right: -0.8em;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-left: solid 3px #64C755;
+    border-bottom: solid 3px #64C755;
+    border-radius: 0px 0px 0px 25px;
+    color: white;
+    -webkit-transform: skewX(8deg);
+    transform: skewX(8deg);
+    cursor: pointer;
+}
+
+.titre_bistrot p {
+    font-family: "ToxTypewriter";
+    height: 3em;
+    margin-right: 0.5em;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.titre_bistrot:hover {
+    text-shadow: 1px 1px 2px #64C755;
+    box-shadow: -1px 2.5px 4px #fff;
+}
+
+#boutonbistrot {
+    margin-top: 0.5em;
+}
+
+
+/*  BOUTON FC/INFO  */
+
+.header_bouton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    height: 5em;
+    padding: 0;
+    margin: 0;
+}
+
+.fb_header {
+    padding: 0.8em;
+    font-size: 18px;
+    border-radius: 35px 0px 0px 0px;
+    border-top: 3px solid #1A26B0;
+    border-left: 3px solid #1A26B0;
+    background-color: black;
+}
+
+.fb_header i {
+    margin: 0.5em;
+}
+
+.fb_header a {
+    color: #fff;
+}
+
+.information {
+    text-shadow: none;
+    font-size: 24px;
+    color: #fff;
+}
+
+.information:hover {
+    color: #FB7826;
+}
+
+.info_header {
+    border-radius: 0px 20px 0px 0px;
+    border-right: 3px solid #E60000;
+    border-top: 3px solid #E60000;
+    background-color: black;
+    padding: 0.5em;
+}
+
+
+/*------------------------------------------------*/
+
+
+/*==================*/
+
+
+/*  MILIEU DE PAGE  */
+
+
+/*==================*/
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    margin: 4em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: auto;
+    width: 90%;
+}
+
+article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: auto;
+    padding: 2%;
+}
+
+article p {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.img_sec {
+    width: 100%;
+}
+
+.text_sec, .calendrier {
+    /*calendrier déplacé dans main anniversaire*/
+    height: auto;
+}
+
+.text_sec p {
+    text-indent: 1.250em;
+}
+
+.hr_section {
+    width: 60%;
+    /*margin: 8em;*/
+    border: 4px solid #FB7826;
+}
+
+.calendrier img {
+    height: 50em;
+    width: 70%;
+    margin-left: 8em;
+}
+
+
+/* SECTION MAIN REGLAGE */
+
+
+/*.section1 {
+        margin-bottom: -3em;
+    }
+    .section2 {
+        margin-bottom: 2em;        Margin enlevés
+    }
+    .section3 {
+        margin-top: -3em;
+    }*/
+
+
+/*INFOS */
+
+.txt_infop {
+    font-size: 5.000em;
+    color: #FB7826;
+    text-shadow: 4.5px 4.5px 1px black;
+}
+
+.txt_logo {
+    margin-left: 10em;
+    margin-top: 2em;
+}
+
+.txt_logo h2 {
+    font-size: 45px;
+    font-family: 'Lobster', cursive;
+}
+
+.txt_logo p {
+    font-size: 28px;
+    margin-top: 0.8em;
+}
+
+.img_logo {
+    margin-left: 10em;
+}
+
+.image_infos img {
+    margin-left: 3em;
+}
+
+
+/* FINS INFO */
+
+
+/* SITE EN CONSTRUCTION */
+
+.construction img {
+    width: 100%;
+    margin-top: 3em;
+    margin-left: 2em;
+}
+
+.siteconstruction {
+    margin-top: 7em;
+    margin-bottom: 5em;
+    margin-left: 6em;
+}
+
+.siteconstruction p {
+    font-size: 28px;
+    text-align: center;
+}
+
+.siteconstruction h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 1em;
+}
+
+
+/* FIN CONSTRUCTION*/
+
+
+/*------------------------------------------------*/
+
+
+/*=======================*/
+
+
+/*  MAIN BISTROT TOGGLE  */
+
+
+/*=======================*/
+
+#mainbistrot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    /* Ajouter pour pertubation du calendar (passe au travers)*/
+    background-color: #151515;
+    border: 5px solid #B3FA84;
+}
+
+#mainbistrot article {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0.5em auto;
+    width: 80%;
+    color: white;
+}
+
+#mainbistrot section {
+    margin: -0.5em;
+}
+
+#mainbistrot h2 {
+    font-size: 28px;
+    color: #B3FA84;
+}
+
+#mainbistrot p {
+    text-align: left;
+    font-family: 'Mirza', cursive;
+    font-size: 22px;
+}
+
+#mainbistrot img {
+    margin: 0.5em;
+    width: 90%;
+    height: 80%;
+}
+
+#mainbistrot .sec_bistrot {
+    margin-top: 16em;
+}
+
+#mainbistrot .sec2_bistrot {
+    margin-left: 3em;
+}
+
+article .img_txt {
+    margin-top: 0.5em;
+}
+
+.hrsection_bistrot {
+    margin: 1em auto;
+    width: 45%;
+    border: 1px solid #B3FA84;
+}
+
+.hr {
+    /* HR entre la Sec1 et la Se2, enlever*/
+    display: none;
+}
+
+.sec_bistrot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.sec1_bistrot, .sec2_bistrot {
+    margin: 0.5em;
+}
+
+.sec1_bistrot {
+    border-right: 2px solid #B3FA84;
+}
+
+.sec3_bistrot {
+    width: 40%;
+}
+
+
+/*------------------------------------------------*/
+
+
+/*=========================*/
+
+
+/* CROIX FERMETURE BISTROT */
+
+
+/*=========================*/
+
+#mainbistrot .fa-times-circle {
+    margin-top: 0.5em;
+    margin-left: 22em;
+    margin-bottom: -2em;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 80px;
+    color: #B3FA84;
+    cursor: pointer;
+    z-index: 6;
+}
+
+#mainbistrot .fa-times-circle:hover {
+    color: #F51810;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+/*------------------------------------------------*/
+
+
+/*========*/
+
+
+/*  MAPS  */
+
+
+/*========*/
+
+.maps {
+    width: 100%;
+    border-top: 3px solid #FB7826;
+    border-radius: 10px 10px 0px 0px;
+    height: 400px;
+}
+
+
+/*------------------------------------------------*/
+
+
+/*==========*/
+
+
+/*  FOOTER  */
+
+
+/*==========*/
+
+footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    background-color: #222;
+    padding: 1em;
+}
+
+footer section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1em ;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+footer p {
+    font-size: 18px;
+    margin: 0.4em;
+    color: white;
+}
+
+footer a {
+    font-size: 18px;
+    margin: 0.05em;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #FB7826;
+}
+
+.rue_footer {
+    /*Rajout après demande client le 22/01/17*/
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+h4 {
+    margin-top: 0.20em;
+    margin-left: 0.9em;
+    font-size: 25px;
+    color: white;
+}
+
+.fa {
+    color: #FB7826;
+}
+
+.contenue {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 1em ;
+}
+
+.hr_footer {
+    display: none;
+}
+
+.fa-facebook-official {
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    margin-right: 1em;
+}
+
+.fa-facebook-official:hover {
+    color: #395794;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+
+/*==============*/
+
+
+/*     FOOTER   */
+
+
+/*==============*/
+
+.titre_voir {
+    color: #FB7826;
+    margin-right: 3em;
+}
+
+.titre_local h4 {
+    color: #FB7826;
+    margin-right: 1em;
+}
+
+.titre_urban h4 {
+    color: #FB7826;
+    background-size: 9em;
+    background-repeat: no-repeat;
+}
+
+.titre_partenaire h4 {
+    color: #FB7826;
+    background-size: 9em;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+.titre_suivre h4 {
+    color: #FB7826;
+    background-size: 9em;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+    margin-right: 2em;
+}
+
+
+}
+*/
 /*---------------------------------------------------------------------------------------------------------------------*/
+*/
+
+/*=========================================================*/
 
 
-/*===========================================================*/
+/*   RESPONSIVE   (min-width: 320px and max-width: 766px)  */
 
 
-/*   RESPONSIVE   (min-width: 1280px and max-width: 1849px)  */
+/*=========================================================*/
 
-
-/*===========================================================*/
-
-@media all and (min-width: 1280px) and (max-width: 1849px) {
+@media all and (max-width: 766px) {
     /*========*/
     /* HEADER */
     /*========*/
     header {
-        background-image: url('../images/bgbody.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-bottom: 4px solid #FB7826;
-        text-shadow: 4.5px 4.5px 1px black;
-    }
-    h1 {
-        text-align: center;
-        padding: 8%;
-        font-size: 80px;
-        letter-spacing: 2px;
-        color: #FB7826;
-    }
-    .titreH {
-        font-size: 180px;
-    }
-    .titreH1 {
-        font-size: 180px;
-        letter-spacing: -35px;
-    }
-    /* HOVER DES BOUTONS DE LA NAV */
-    .accueil:hover {
-        color: white;
-        background-color: rgba(253, 160, 41, 0.8);
-    }
-    .accrobranche:hover {
-        color: white;
-        background-color: rgba(75, 163, 60, 0.8);
-    }
-    .skatepark:hover {
-        color: white;
-        background-color: rgba(13, 176, 195, 0.8);
-    }
-    .trampo:hover {
-        color: white;
-        background-color: rgba(103, 53, 0, 0.8);
-    }
-    .evenement:hover {
-        color: white;
-        background-color: rgba(252, 42, 33, 0.8);
-    }
-    .anniversaire:hover {
-        color: white;
-        background-color: rgba(220, 63, 209, 0.8);
-    }
-    .media:hover {
-        color: white;
-        background-color: rgba(118, 108, 255, 0.8);
-    }
-    /*------------------------------------------------*/
-    /*=======*/
-    /*  NAV  */
-    /*=======*/
-    nav {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
         position: fixed;
         width: 100%;
+        height: 4.83em;
         text-align: center;
-        z-index: 4;
-    }
-    ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        background-color: rgba(225, 207, 187, 0.5);
-        height: 4.5em;
-        width: 100%;
-        list-style: none;
-    }
-    li {
-        height: 50%;
-        width: 50%;
-        list-style: none;
-        border-right: 2px solid #FB7826;
-    }
-    li:last-child {
-        border: none;
-    }
-    nav a {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        text-decoration: none;
-        font-family: 'Lobster', cursive;
-        background-color: rgba(202, 202, 202, 0.8);
-        border: 2px solid black;
-        border-radius: 30%;
-        width: 80%;
-        margin: auto;
-        padding: 0.2em;
-        font-size: 1.2em;
-        color: black;
-    }
-    /* LOGO INFO */
-    .information {
         background-color: black;
-        border: 2px solid #FB7826;
-        border-radius: none;
-        width: 90%;
-        color: white;
-        margin-top: -0.8em;
-        margin-left: -0.05em;
-        -webkit-transform: rotate(-20deg);
-                transform: rotate(-20deg);
-        -webkit-transition: 0.5s;
-        transition: 0.5s;
-    }
-    .information:hover {
-        background-color: #FB7826;
-        border: 2px solid #000;
-        color: black;
-        -webkit-transition: 0.5s;
-        transition: 0.5s;
-        -webkit-transform: rotate(340deg);
-        transform: rotate(340deg);
-    }
-    /*------------------------------------------------*/
-    /*=============*/
-    /* DIV BISTROT */
-    /*=============*/
-    .titre_bistrot {
-        width: 14em;
-        height: 8em;
-        padding: 0.25em;
-        margin-right: -0.8em;
-        background-color: rgba(0, 0, 0, 0.8);
-        border-left: solid 3px #64C755;
-        border-bottom: solid 3px #64C755;
-        border-radius: 0px 0px 0px 25px;
-        color: white;
-        -webkit-transform: skewX(8deg);
-                transform: skewX(8deg);
-        cursor: pointer;
-    }
-    .titre_bistrot p {
-        height: 3em;
-        cursor: pointer;
-        font-family: 'Lobster', cursive;
-        font-size: 20px;
-        z-index: 1;
-    }
-    .titre_bistrot:hover {
-        text-shadow: 1px 1px 2px #64C755;
-        box-shadow: -1px 2.5px 4px #fff;
-    }
-    #boutonbistrot {
-        margin-top: 0.5em;
-    }
-    /*------------------------------------------------*/
-    /*==================*/
-    /*  MILIEU DE PAGE  */
-    /*==================*/
-    main {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        overflow: hidden;
-    }
-    main section {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        margin: 3em auto;
-    }
-    section {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        height: auto;
-        width: 90%;
-    }
-    article {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        height: 15em;
-        padding: 2%;
-    }
-    article p {
-        font-size: 20px;
-    }
-    h2 {
-        font-size: 24px;
-    }
-    .img_sec {
-        -webkit-box-flex: 1;
-            -ms-flex: 1;
-                flex: 1;
-        width: 50%;
-    }
-    .text_sec, .calendrier {
-        -webkit-box-flex: 2;
-            -ms-flex: 2;
-                flex: 2;
-        height: 12.5em;
-    }
-    .text_sec p {
-        text-indent: 1.250em;
-    }
-    .hr_section {
-        width: 60%;
-        margin: 8em;
-        border: 4px solid #FB7826;
-    }
-    /* SECTION MAIN REGLAGE */
-    .section1 {
-        margin-bottom: -3em;
-    }
-    .section2 {
-        margin-top: -3em;
-        margin-bottom: 5em;
-    }
-    .section3 {
-        margin-top: -3em;
-    }
-    /*INFOS */
-
-    /*fin infos */
-    /*------------------------------------------------*/
-    /*=======================*/
-    /*  MAIN BISTROT TOGGLE  */
-    /*=======================*/
-    #mainbistrot {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        position: fixed;
-        text-align: center;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 5;
-        /* Ajouter pour pertubation du calendar (passe au travers)*/
-        background-color: #151515;
-    }
-    #mainbistrot article {
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        margin: 0.5em auto;
-        width: 80%;
-        color: white;
-    }
-    #mainbistrot section {
-        margin: -0.5em;
-    }
-    #mainbistrot h2 {
-        font-size: 20px;
-        color: #B3FA84;
-    }
-    #mainbistrot p {
-        font-size: 18px;
-    }
-    #mainbistrot img {
-        margin: 0.5em auto;
-        width: 70%;
-        height: 60%;
-    }
-    #mainbistrot .sec_bistrot {
-        margin-top: 10em;
-    }
-    #mainbistrot .sec2_bistrot {
-        margin-left: 2em;
-    }
-    article .img_txt {
-        margin-top: 0.5em;
-    }
-    .hrsection_bistrot {
-        margin: 1em auto;
-        width: 45%;
-        border: 1px solid #B3FA83;
-    }
-    .hr {
-        /* HR entre la Sec1 et la Se2, enlever*/
-        display: none;
-    }
-    .sec_bistrot {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        width: 100%;
-    }
-    .sec1_bistrot, .sec2_bistrot {
-        margin: 0.5em auto;
-    }
-    .sec1_bistrot {
-        border-right: 2px solid #B3FA84;
-    }
-    .sec3_bistrot {
-        width: 60%;
-    }
-    /*=========================*/
-    /* CROIX FERMETURE BISTROT */
-    /*=========================*/
-    #mainbistrot .fa-times-circle {
-        margin-top: 0.5em;
-        margin-left: 18em;
-        margin-bottom: -2em;
-        -webkit-transition: 1s;
-        transition: 1s;
-        font-size: 60px;
-        color: #B3FA84;
-        cursor: pointer;
-        z-index: 6;
-    }
-    #mainbistrot .fa-times-circle:hover {
-        color: #F51810;
-        -webkit-transition: 1s;
-        transition: 1s;
-    }
-    /*------------------------------------------------*/
-    /*========*/
-    /*  MAPS  */
-    /*========*/
-    .maps {
-        width: 100%;
-        border-top: 3px solid #FB7826;
-        border-radius: 10px 10px 0px 0px;
-        height: 400px;
-    }
-    /*------------------------------------------------*/
-    /*==========*/
-    /*  FOOTER  */
-    /*==========*/
-    footer {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-align: baseline;
-            -ms-flex-align: baseline;
-                align-items: baseline;
-        background-color: #222;
-        padding: 1em auto;
-    }
-    footer section {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        margin: 1em auto;
-    }
-    footer p {
-        font-size: 18px;
-        margin: 0.4em;
-        color: white;
-    }
-    footer a {
-        font-size: 16px;
-        color: #fff;
-    }
-    footer a:hover {
-        color: #FB7826;
-    }
-    h4 {
-        margin-top: 0.50em;
-        margin-left: 1.3em;
-        font-size: 25px;
-        color: white;
-    }
-    .fa {
-        color: #FB7826;
-    }
-    .contenue {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        margin: 1em auto;
-    }
-    .hr_footer {
-        display: none;
-    }
-    .fa-facebook-official {
-        -webkit-transition: 0.7s;
-        transition: 0.7s;
-    }
-    .fa-facebook-official:hover {
-        color: #395794;
-        -webkit-transition: 0.7s;
-        transition: 0.7s;
-    }
-    /*==============*/
-    /*     FOOTER   */
-    /*==============*/
-    .titre_voir {
-        color: #FB7826;
-        margin-right: 3em;
-    }
-    .titre_local h4 {
-        color: #FB7826;
-        margin-right: 2em;
-    }
-    .titre_urban h4 {
-        color: #FB7826;
-        background-size: 9em;
-        background-repeat: no-repeat;
-        margin-right: 1.2em;
-    }
-    .titre_partenaire h4 {
-        color: #FB7826;
-        background-size: 9em;
-        background-repeat: no-repeat;
-        margin-bottom: 1em;
-    }
-    .titre_suivre h4 {
-        color: #FB7826;
-        background-size: 9em;
-        background-repeat: no-repeat;
-        margin-right: 1em;
-    }
-}
-
-
-/*---------------------------------------------------------------------------------------------------------------------*/
-
-
-/*=========================================================*/
-
-
-/*   RESPONSIVE   (min-width: 801px and max-width: 1279px)  */
-
-
-/*=========================================================*/
-
-@media all and (min-width: 801px) and (max-width: 1279px) {
-    /*========*/
-    /* HEADER */
-    /*========*/
-    header {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        width: 100%;
-        height: 15.625em;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        background-image: url("../images/bghead.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-size: 100% 100%;
         border-bottom: 4px solid #FB7826;
+
+
+
+    }
+
+    .header_bouton {
+       position: absolute;
+        left: 0.85em;
+        top: 0.85em;
+
+        text-align: left;
     }
     h1 {
-        font-size: 70px;
-        text-shadow: 1px 2px #fff;
+        display: relative;
+        font-size: 36px;
+        text-shadow: 1px 2px #000;
         color: #FB7826;
+        margin-top: 0.4025em;
+
     }
+
     /* HOVER DES BOUTONS DE LA NAV */
     .accueil:hover {
         color: rgba(253, 160, 41, 0.8);
@@ -1330,6 +1023,10 @@ img {
         top: 10px;
         cursor: pointer;
     }
+
+    #mute {
+        display: none;
+    }
     .btn-navigation .barre {
         z-index: 6;
         width: 25px;
@@ -1360,7 +1057,7 @@ img {
         top: 0;
         padding: 5px;
         background: #333;
-        width: 15%;
+        width: 45%;
         height: 100%;
         -webkit-transition: -webkit-transform .6s ease-in-out;
         transition: -webkit-transform .6s ease-in-out;
@@ -1411,25 +1108,31 @@ img {
     /* DIV BISTROT */
     /*=============*/
     .titre_bistrot {
-        width: 10em;
-        height: 6em;
-        padding: 0.5em;
-        margin-left: 0.5em;
-        margin-top: -1em;
-        background-color: rgba(0, 0, 0, 0.8);
-        border-left: solid 3px #64C755;
-        border-bottom: solid 3px #64C755;
-        border-radius: 0px 0px 0px 25px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 4.83em;
+        background-color: rgba(0, 0, 0, 1);
+        margin-left: 0.85em;
+        border-bottom: solid 4px #FB7826;
         color: white;
-        -webkit-transform: skewX(8deg);
-                transform: skewX(8deg);
         cursor: pointer;
     }
+
+
     .titre_bistrot p {
-        height: 3em;
+        height: auto;
         cursor: pointer;
         font-family: 'Lobster', cursive;
         z-index: 1;
+        text-align: center;
+        font-size: 30px;
+
     }
     .titre_bistrot:hover {
         text-shadow: 1px 1px 2px #64C755;
@@ -1450,7 +1153,11 @@ img {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+        justify-content: center;
         overflow: hidden;
+        height: auto;
+        text-align: center;
+        margin-top: 1.61em;
     }
     section {
         display: -webkit-box;
@@ -1460,86 +1167,72 @@ img {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        margin: 1em auto;
         height: auto;
         width: 90%;
+        padding: 1.61em;
+    }
+
+    .section1 {
+        margin-top: 2.46em;
     }
     article {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        height: 7.813em;
-        padding: 2%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-bottom: 1.61em;
     }
     article p {
-        font-size: 20px;
-        margin-top: 1em;
-    }
-    h2 {
-        font-size: 24px;
+        margin-top: 1.61em;
+        font-size: 15px;
     }
     .img_sec {
         -webkit-box-flex: 1;
             -ms-flex: 1;
                 flex: 1;
-        width: 50%;
     }
     .text_sec, .calendrier {
         -webkit-box-flex: 2;
             -ms-flex: 2;
                 flex: 2;
-        height: 12.5em;
     }
     .text_sec p {
         text-indent: 1.250em;
     }
     .hr_section {
         width: 60%;
-        margin: 3.75 auto;
+
         border: 4px solid #FB7826;
     }
     /* INFOS */
-    #sectioninfo1 {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-    }
     .txt_infop {
-        font-size: 2em;
+        font-size: 1.5em;
         color: #FB7826;
         text-shadow: 4.5px 4.5px 1px black;
     }
     .txt_logo {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        margin-left: 5em;
-        margin-top: -10em;
+        margin: 2em;
     }
     .txt_logo h2 {
-        font-size: 24px;
+        font-size: 16px;
         font-family: 'Lobster', cursive;
     }
     .txt_logo p {
-        font-size: 18px;
+        font-size: 15px;
     }
     .img_logo {
-        height: 15em;
-        width: 50em;
+        height: 12em;
+        width: 20em;
     }
-    .image_infos img {
-        margin-left: 3em;
-        margin-top: 6em;
+
+    h2 {
+        display: relative;
+        text-align: center;
     }
-    /* FIN INFOS */
+    /*FIN INFOS */
     /*------------------------------------------------*/
     /*=======================*/
     /*  MAIN BISTROT TOGGLE  */
@@ -1552,11 +1245,13 @@ img {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: fixed;
-        text-align: left;
-        top: 0;
+        text-align: center;
+        top: -3.22em;
         width: 100%;
-        height: 100%;
+        height: 105%;
         background-color: #151515;
         z-index: 5;
         /* Ajouter pour pertubation du calendar (passe au travers)*/
@@ -1565,46 +1260,43 @@ img {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        margin: 2em auto;
-        margin-top: 0.5em;
+        justify-content: center;
         width: 100%;
+        height: auto;
         color: white;
     }
     #mainbistrot h2 {
-        font-size: 20px;
+        font-size: 16px;
         color: #B3FA84;
+        margin-bottom: 0.85em;
     }
     #mainbistrot p {
-        font-size: 17px;
+        font-size: 12px;
     }
-    #mainbistrot img {
-        margin: 0.5em auto;
-        width: 35%;
-        height: 120%;
+    #mainbistrot .img_txt {
+        display: none;
     }
-    article .img_txt {
-        margin-top: 0.5em;
+
+
+    .sec_bistrot {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .hr {
-        margin: 0.5em auto;
-        width: 45%;
-        border: 2px solid #B3FA84;
-    }
-    .hrsection_bistrot {
-        margin: 0.5em auto;
-        width: 45%;
-        border: 2px solid #B3FA84;
-    }
+
+
     /*=========================*/
     /* CROIX FERMETURE BISTROT */
     /*=========================*/
     #mainbistrot .fa-times-circle {
-        margin-top: 0.2em;
-        margin-left: 14em;
-        margin-bottom: -1em;
+        position: absolute;
+        top: 0.85em;
+        right: 0.425em;
+        text-align: right;
         -webkit-transition: 1s;
         transition: 1s;
-        font-size: 60px;
+        font-size: 40px;
         color: #B3FA84;
         cursor: pointer;
         z-index: 6;
@@ -1622,7 +1314,6 @@ img {
         width: 100%;
         border-top: 3px solid #FB7826;
         border-radius: 10px 10px 0px 0px;
-        height: 300px;
     }
     /*------------------------------------------------*/
     /*==========*/
@@ -1632,37 +1323,43 @@ img {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: horizontal;
+        -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-align: baseline;
-            -ms-flex-align: baseline;
-                align-items: baseline;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        justify-content: center;
         background-color: #222;
-        padding: 1em auto;
+        text-align: center;
+        height: auto;
     }
     footer section {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        justify-content: flex-end;
     }
     footer p {
-        font-size: 15px;
-        margin: 0.2em;
+        font-size: 16px;
         color: white;
     }
     footer a {
-        font-size: 14px;
         color: #fff;
     }
     footer a:hover {
         color: #FB7826;
     }
     h4 {
-        margin-top: 0.50em;
-        font-size: 25px;
+        text-align: center;
+        font-size: 20px;
         color: white;
+        background-image: none;
+        margin-bottom: 1.61em;
     }
     .fa {
         color: #FB7826;
@@ -1675,59 +1372,24 @@ img {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        margin: 1em auto;
+        justify-content: center;
     }
     .hr_footer {
-        display: none;
+        width: 50%;
+        border: 1px solid #FB7826;
     }
     .fa-facebook-official {
         -webkit-transition: 0.7s;
         transition: 0.7s;
-        margin-right: 1em;
     }
     .fa-facebook-official:hover {
         color: #395794;
         -webkit-transition: 0.7s;
         transition: 0.7s;
     }
-    /*==============*/
-    /*     FOOTER   */
-    /*==============*/
-    .titre_voir {
-        color: #FB7826;
-        margin-right: 3em;
-    }
-    .titre_voir {
-        margin-left: 1em;
-    }
-    .titre_local h4 {
-        color: #FB7826;
-        margin-right: 1em;
-    }
-    .titre_urban h4 {
-        color: #FB7826;
-        background-size: 9em;
-        background-repeat: no-repeat;
-    }
-    .titre_partenaire h4 {
-        color: #FB7826;
-        background-size: 9em;
-        background-repeat: no-repeat;
-        margin-bottom: 1em;
-    }
-    .titre_suivre h4 {
-        color: #FB7826;
-        background-size: 9em;
-        background-repeat: no-repeat;
-        margin-bottom: 1em;
-        margin-right: 2em;
-    }
 }
 
-
-/*---------------------------------------------------------------------------------------------------------------------*/
-
-
+/*---------------------------------------------*/
 /*=========================================================*/
 
 
@@ -1736,7 +1398,7 @@ img {
 
 /*=========================================================*/
 
-@media all and (min-width: 767px) and (max-width: 800px) {
+@media all and (min-width: 767px) and (max-width: 1200px) {
     /*========*/
     /* HEADER */
     /*========*/
@@ -1751,12 +1413,20 @@ img {
             -ms-flex-pack: center;
                 justify-content: center;
         width: 100%;
-        height: 15.625em;
+        height: 16.1em;
         text-align: center;
         background-image: url("../images/bghead.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         border-bottom: 4px solid #FB7826;
+    }
+
+    .header_bouton {
+       position: absolute;
+        left: 0;
+        top: 9.3em;
+        background-color: #333333;
+        text-align: left;
     }
     h1 {
         font-size: 60px;
@@ -1821,12 +1491,13 @@ img {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: fixed;
         right: 0;
         top: 0;
-        padding: 5px;
         background: #333;
-        width: 20%;
+        width: 30%;
         height: 100%;
         -webkit-transition: -webkit-transform .6s ease-in-out;
         transition: -webkit-transform .6s ease-in-out;
@@ -1844,11 +1515,12 @@ img {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+       justify-content: center;
+        align-items: center;
         position: absolute;
-        margin-left: 15px;
-        top: 240px;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
+        top: 17.71em;
+
+
     }
     nav ul li {
         margin: 0.2em 0;
@@ -1857,6 +1529,10 @@ img {
         text-decoration: none;
         color: #fff;
         font-size: 15px;
+    }
+
+    #mute {
+        display: none;
     }
     /* LOGO INFO */
     .information {
@@ -1877,22 +1553,23 @@ img {
     /* DIV BISTROT */
     /*=============*/
     .titre_bistrot {
-        width: 10em;
-        height: 6em;
-        padding: 0.5em;
-        margin-left: 0.5em;
-        margin-top: -1em;
+        width: 100%;
+        height: 11.739em;
         background-color: rgba(0, 0, 0, 0.8);
-        border-left: solid 3px #64C755;
-        border-bottom: solid 3px #64C755;
-        border-radius: 0px 0px 0px 25px;
+
+        border-bottom: solid 4px #FB7826;
         color: white;
-        -webkit-transform: skewX(8deg);
-                transform: skewX(8deg);
+        position: absolute;
+        top: 0;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
     }
+
     .titre_bistrot p {
-        height: 3em;
+        height: auto;
         cursor: pointer;
         font-family: 'Lobster', cursive;
         z-index: 1;
@@ -1916,6 +1593,7 @@ img {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+        justify-content: center;
         overflow: hidden;
     }
     section {
@@ -1929,9 +1607,10 @@ img {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        margin: 1em auto;
+        justify-content: center;
         height: auto;
-        width: 90%;
+        width: 100%;
+        padding: 1.61em;
     }
     article {
         display: -webkit-box;
@@ -1941,30 +1620,42 @@ img {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        height: 7.813em;
-        padding: 2%;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 1.61em;
     }
     article p {
-        margin-top: 1em;
         font-size: 18px;
     }
     h2 {
         font-size: 20px;
+
+    }
+
+    #saveMe {
+        position: relative;
+        width: 150px;
+        height: auto;
     }
     .img_sec {
         -webkit-box-flex: 1;
             -ms-flex: 1;
                 flex: 1;
         width: 60%;
+        margin-top: 1.61em;
+        margin-bottom: 1.61em;
+
     }
     .text_sec, .calendrier {
         -webkit-box-flex: 2;
             -ms-flex: 2;
                 flex: 2;
-        height: 12.5em;
+        height: auto;
     }
     .text_sec p {
         text-indent: 1.250em;
+        margin-top: 1.61em;
     }
     .hr_section {
         width: 60%;
@@ -1981,7 +1672,7 @@ img {
             -ms-flex-direction: row;
                 flex-direction: row;
     }
-    .txt_infop {
+    .txt_info p {
         font-size: 1.5em;
         color: #FB7826;
         text-shadow: 4.5px 4.5px 1px black;
@@ -2018,6 +1709,8 @@ img {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: fixed;
         text-align: center;
         top: 0;
@@ -2031,8 +1724,7 @@ img {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        margin: 2em auto;
-        margin-top: -0.5em;
+
         width: 100%;
         color: white;
     }
@@ -2044,28 +1736,26 @@ img {
         font-size: 17px;
     }
     #mainbistrot img {
-        margin: 0.5em auto;
-        width: 35%;
+
+        width: 60%;
     }
-    .hr {
-        /* HR entre la Sec1 et la Se2, ajouter car il n'y a pas la même class*/
-        margin: 0.5em auto;
-        width: 45%;
-        border: 2px solid #B3FA84;
-    }
-    article .img_txt {
-        margin-top: 0.5em;
+
+    .img_txt {
+        margin-bottom: 1.61em;
     }
     .hrsection_bistrot {
-        margin: 0.5em auto;
         width: 45%;
         border: 2px solid #B3FA84;
     }
+    .sec_bistrot {
+        display: flex;
+        flex-direction: row;
+    }
     .sec2_bistrot {
-        margin-bottom: -1em;
+
     }
     .sec2_bistrot .img_txt {
-        margin-top: -2em;
+
     }
     /*=========================*/
     /* CROIX FERMETURE BISTROT */
@@ -2094,6 +1784,7 @@ img {
         width: 100%;
         border-top: 3px solid #FB7826;
         border-radius: 10px 10px 0px 0px;
+        bottom: 0;
     }
     /*------------------------------------------------*/
     /*==========*/
@@ -2107,443 +1798,37 @@ img {
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
-        -webkit-box-align: baseline;
-            -ms-flex-align: baseline;
-                align-items: baseline;
+        -webkit-box-align: flex-start;
+            -ms-flex-align: flex-start;
+                align-items: flex-start;
+        justify-content: center;
         background-color: #222;
-        padding: 1em auto;
+
     }
     footer section {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-    }
-    footer p {
-        font-size: 15px;
-        margin: 0.2em;
-        color: white;
-    }
-    footer a {
-        font-size: 14px;
-        color: #fff;
-    }
-    footer a:hover {
-        color: #FB7826;
-    }
-    h4 {
-        margin-top: 0.75em;
-        font-size: 25px;
-        color: #fff;
-    }
-    .fa {
-        color: #FB7826;
-    }
-    .contenue {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        margin: 1em auto;
-    }
-    .hr_footer {
-        display: none;
-    }
-    .fa-facebook-official {
-        -webkit-transition: 0.7s;
-        transition: 0.7s;
-    }
-    .fa-facebook-official:hover {
-        color: #395794;
-        -webkit-transition: 0.7s;
-        transition: 0.7s;
-    }
-    .titre_voir {
-        margin-right: 1.5em;
-    }
-}
-
-
-/*---------------------------------------------------------------------------------------------------------------------*/
-
-
-/*=========================================================*/
-
-
-/*   RESPONSIVE   (min-width: 320px and max-width: 766px)  */
-
-
-/*=========================================================*/
-
-@media all and (min-width: 320px) and (max-width: 766px) {
-    /*========*/
-    /* HEADER */
-    /*========*/
-    header {
-        width: 100%;
-        height: 15.625em;
-        text-align: center;
-        background-image: url("../images/uplogo.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-bottom: 4px solid #FB7826;
-    }
-    h1 {
-        font-size: 36px;
-        text-shadow: 1px 2px #000;
-        color: #FB7826;
-    }
-    /* HOVER DES BOUTONS DE LA NAV */
-    .accueil:hover {
-        color: rgba(253, 160, 41, 0.8);
-    }
-    .accrobranche:hover {
-        color: rgba(75, 163, 60, 0.8);
-    }
-    .skatepark:hover {
-        color: rgba(13, 176, 195, 0.8);
-    }
-    .trampo:hover {
-        color: rgba(103, 53, 0, 0.8);
-    }
-    .evenement:hover {
-        color: rgba(252, 42, 33, 0.8);
-    }
-    .anniversaire:hover {
-        color: rgba(220, 63, 209, 0.8);
-    }
-    .media:hover {
-        color: rgba(118, 108, 255, 0.8);
-    }
-    /*-----------------------------------------------*/
-    /*===============*/
-    /*  MENU BURGER  */
-    /*===============*/
-    .btn-navigation {
-        z-index: 4;
-        position: fixed;
-        right: 10px;
-        top: 10px;
-        cursor: pointer;
-    }
-    .btn-navigation .barre {
-        z-index: 6;
-        width: 25px;
-        height: 4px;
-        background: #FB7826;
-        margin-top: 3px;
-        transition: background .3s ease-in-out;
-        -webkit-transition: background .3s ease-in-out;
-    }
-    .btn-navigation .barre.white {
-        background: #FB7826;
-    }
-    nav.isOpen {
-        transform: translateX(0%);
-        -webkit-transform: translateX(0%);
-    }
-    nav {
-        z-index: 4;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        position: fixed;
-        right: 0;
-        top: 0;
-        padding: 5px;
-        background: #333;
-        width: 40%;
-        height: 100%;
-        -webkit-transition: -webkit-transform .6s ease-in-out;
-        transition: -webkit-transform .6s ease-in-out;
-        transition: transform .6s ease-in-out;
-        transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
-        -webkit-transition: transform .6s ease-in-out;
-        transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-    }
-    nav ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        position: absolute;
-        margin-left: 15px;
-        top: 240px;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-    }
-    nav ul li {
-        margin: 0.2em 0;
-    }
-    nav ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 15px;
-    }
-    /* LOGO INFO */
-    .information {
-        border-radius: none;
-        color: #FB7826;
-        font-size: 16px;
-        text-shadow: 0.5px -2px #000;
-        -webkit-transition: 0.5s;
-        transition: 0.5s;
-    }
-    .information:hover{
-        color: #E31313;
-        -webkit-transition: 0.5s;
-        transition: 0.5s;
-    }
-    /*------------------------------------------------*/
-    /*=============*/
-    /* DIV BISTROT */
-    /*=============*/
-    .titre_bistrot {
-        width: 10em;
-        height: 6em;
-        padding: 0.5em;
-        margin-left: 0.5em;
-        margin-top: -1em;
-        background-color: rgba(0, 0, 0, 0.8);
-        border-left: solid 3px #64C755;
-        border-bottom: solid 3px #64C755;
-        border-radius: 0px 0px 0px 25px;
-        color: white;
-        -webkit-transform: skewX(8deg);
-                transform: skewX(8deg);
-        cursor: pointer;
-    }
-    .titre_bistrot p {
-        height: 3em;
-        cursor: pointer;
-        font-family: 'Lobster', cursive;
-        z-index: 1;
-    }
-    .titre_bistrot:hover {
-        text-shadow: 1px 1px 2px #64C755;
-        box-shadow: -1px 2.5px 4px #fff;
-    }
-    /*------------------------------------------------*/
-    /*==================*/
-    /*  MILIEU DE PAGE  */
-    /*==================*/
-    main {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        overflow: hidden;
-    }
-    section {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        margin: 1em auto;
+        align-items: center;
+        justify-content: flex-start;
         height: auto;
-        width: 90%;
-    }
-    article {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        height: 7.813em;
-        padding: 2%;
-    }
-    article p {
-        margin-top: 1em;
-        font-size: 15px;
-    }
-    .img_sec {
-        -webkit-box-flex: 1;
-            -ms-flex: 1;
-                flex: 1;
-    }
-    .text_sec, .calendrier {
-        -webkit-box-flex: 2;
-            -ms-flex: 2;
-                flex: 2;
-        height: 12.5em;
-    }
-    .text_sec p {
-        text-indent: 1.250em;
-    }
-    .hr_section {
-        width: 60%;
-        margin: 3.75 auto;
-        border: 4px solid #FB7826;
-    }
-    /* INFOS */
-    .txt_infop {
-        font-size: 1.5em;
-        color: #FB7826;
-        text-shadow: 4.5px 4.5px 1px black;
-    }
-    .txt_logo {
-        margin: 2em;
-    }
-    .txt_logo h2 {
-        font-size: 16px;
-        font-family: 'Lobster', cursive;
-    }
-    .txt_logo p {
-        font-size: 15px;
-    }
-    .img_logo {
-        height: 12em;
-        width: 20em;
-    }
-    /*FIN INFOS */
-    /*------------------------------------------------*/
-    /*=======================*/
-    /*  MAIN BISTROT TOGGLE  */
-    /*=======================*/
-    #mainbistrot {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        position: fixed;
         text-align: center;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #151515;
-        z-index: 5;
-        /* Ajouter pour pertubation du calendar (passe au travers)*/
-    }
-    #mainbistrot article {
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        margin: 1em auto;
-        margin-top: -1em;
-        width: 100%;
-        color: white;
-    }
-    #mainbistrot h2 {
-        font-size: 16px;
-        color: #B3FA84;
-    }
-    #mainbistrot p {
-        font-size: 14px;
-    }
-    #mainbistrot .img_txt {
-        display: none;
-    }
-    .hr {
-        /* HR entre la Sec1 et la Se2, ajouter car il n'y a pas la même class*/
-        margin: 0.2em auto;
-        margin-top: -1em;
-        width: 45%;
-        border: 2px solid #B3FA84;
-    }
-    .hrsection_bistrot {
-        margin: 0.2em auto;
-        width: 45%;
-        border: 2px solid #B3FA84;
-    }
-    .sec2_bistrot {
-        margin-bottom: -1.5em;
-    }
-    /*=========================*/
-    /* CROIX FERMETURE BISTROT */
-    /*=========================*/
-    #mainbistrot .fa-times-circle {
-        margin-top: 0.2em;
-        margin-left: 7em;
-        margin-bottom: -1em;
-        -webkit-transition: 1s;
-        transition: 1s;
-        font-size: 40px;
-        color: #B3FA84;
-        cursor: pointer;
-        z-index: 6;
-    }
-    #mainbistrot .fa-times-circle:hover {
-        color: #F51810;
-        -webkit-transition: 1s;
-        transition: 1s;
-    }
-    /*------------------------------------------------*/
-    /*========*/
-    /*  MAPS  */
-    /*========*/
-    .maps {
-        width: 100%;
-        border-top: 3px solid #FB7826;
-        border-radius: 10px 10px 0px 0px;
-    }
-    /*------------------------------------------------*/
-    /*==========*/
-    /*  FOOTER  */
-    /*==========*/
-    footer {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        background-color: #222;
-        padding: 1em auto;
-    }
-    footer section {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
     }
     footer p {
-        font-size: 16px;
-        margin: 0.2em;
+        font-size: 12px;
         color: white;
     }
     footer a {
+        font-size: 12px;
         color: #fff;
     }
     footer a:hover {
         color: #FB7826;
     }
     h4 {
-        text-align: center;
-        margin-left: 1.2em;
-        margin-top: 0.75em;
-        font-size: 25px;
-        color: white;
-        background-image: none;
+        margin-bottom: 0.85em;
+        font-size: 18px;
+        color: #fff;
     }
     .fa {
         color: #FB7826;
@@ -2556,12 +1841,12 @@ img {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        margin: 1em auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
     .hr_footer {
-        width: 50%;
-        margin: 2.75 auto;
-        border: 1px solid #FB7826;
+        display: none;
     }
     .fa-facebook-official {
         -webkit-transition: 0.7s;
@@ -2572,4 +1857,3 @@ img {
         -webkit-transition: 0.7s;
         transition: 0.7s;
     }
-}
