@@ -247,6 +247,8 @@ img {
 /*========*/
 
 header {
+  width: 100%;
+  height: 35em;
     background-image: url('../images/bgbody.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -254,7 +256,8 @@ header {
     text-shadow: 4.5px 4.5px 1px black;
 }
 
-h1 {
+
+/*h1 {
     text-align: center;
     padding: 8%;
     font-size: 80px;
@@ -268,7 +271,7 @@ h1 {
 .titreH1 {
     font-size: 180px;
     letter-spacing: -35px;
-}
+}*/
 
 
 /* HOVER DES BOUTONS DE LA NAV */
@@ -441,7 +444,7 @@ nav a {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    height: 5em;
+    height: 35em;
     padding: 0;
     margin: 0;
 }
