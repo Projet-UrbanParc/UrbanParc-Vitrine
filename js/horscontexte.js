@@ -310,7 +310,7 @@ $('#link2').click(function() {
 
     // Animation CSS
     $('header').css({
-        'background-image': 'url("images/imgup/Accrobranche/UrbanPark-23.jpg")',
+        'background-image': 'url("images/header_accro.png")',
         'background-size': 'cover',
         'background-repeat': 'no-repeat',
         'border-bottom': '4px solid #4BA33C',
@@ -360,7 +360,7 @@ $('#link3').click(function() {
 
     // Animation CSS
     $('header').css({
-        'background-image': 'url("images/imgup/sk8/UrbanPark-3.jpg")',
+        'background-image': 'url("images/header_skatepark.png")',
         'background-size': 'cover',
         'background-repeat': 'no-repeat',
         'border-bottom': '4px solid #0DB0C3',
@@ -415,7 +415,7 @@ $('#link5').click(function() {
 
     // Animation CSS
     $('header').css({
-        'background-image': 'url("images/imgup/gallerie/UrbanPark-50.jpg")',
+        'background-image': 'url("images/header_event.png")',
         'background-size': 'cover',
         'background-repeat': 'no-repeat',
         'border-bottom': '4px solid #FC2A21',
@@ -464,7 +464,7 @@ $('#link6').click(function() {
 
     // Animation CSS
     $('header').css({
-        'background-image': 'url("images/imgup/gallerie/UrbanPark-15.jpg")',
+        'background-image': 'url("images/header_anniversaire.png")',
         'background-size': 'cover',
         'background-repeat': 'no-repeat',
         'border-bottom': '4px solid #DC3FD1',

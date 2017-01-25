@@ -506,6 +506,10 @@ main {
     align-items: center;
     overflow: hidden;
 }
+/*loader test*/
+/*.mainindex{
+  background: url("../images/animal.gif") 50% 50% no-repeat;
+}*/
 
 section {
     display: flex;
@@ -585,7 +589,10 @@ h2 {
     .section3 {
         margin-top: -3em;
     }*/
-
+    /*loader test*/
+/*.section1, .section2, .section3{
+  background-color: #fff;
+}*/
 
 /*INFOS */
 
