@@ -557,6 +557,9 @@ h2 {
     margin-bottom: 1em;
     text-align: center;
 }
+.titre_sec{
+    height: 1.7em;
+}
 
 .img_sec {
   display: flex;
@@ -632,7 +635,6 @@ h2 {
 
 .txt_logo h2 {
     font-size: 45px;
-    font-family: 'Lobster', cursive;
 }
 
 .txt_logo p {
@@ -709,6 +711,7 @@ h2 {
     /* Ajouter pour pertubation du calendar (passe au travers)*/
     background-color: #151515;
     border: 5px solid #B3FA84;
+    font-family: "ToxTypewriter";
 }
 
 #mainbistrot article {
@@ -1253,7 +1256,6 @@ h4 {
     }
     .txt_logo h2 {
         font-size: 16px;
-        font-family: 'Lobster', cursive;
     }
     .txt_logo p {
         font-size: 15px;
@@ -1267,6 +1269,7 @@ h4 {
         display: relative;
         text-align: center;
     }
+
     /*FIN INFOS */
     /*------------------------------------------------*/
     /*=======================*/
@@ -1666,7 +1669,6 @@ h4 {
     }
     h2 {
         font-size: 20px;
-
     }
 
     #saveMe {
@@ -1718,7 +1720,6 @@ h4 {
     }
     .txt_logo h2 {
         font-size: 16px;
-        font-family: 'Lobster', cursive;
     }
     .txt_logo p {
         font-size: 15px;
