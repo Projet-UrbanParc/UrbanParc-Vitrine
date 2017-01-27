@@ -863,6 +863,7 @@ footer {
     align-items: baseline;
     background-color: #222;
     padding: 1em;
+    font-family: "Futura";
 }
 
 footer section {
@@ -1368,6 +1369,7 @@ h4 {
         background-color: #222;
         text-align: center;
         height: auto;
+        font-family: "Futura";
     }
     footer section {
         display: -webkit-box;
@@ -1837,7 +1839,7 @@ h4 {
                 align-items: flex-start;
         justify-content: center;
         background-color: #222;
-
+        font-family: "Futura";
     }
     footer section {
         display: -webkit-box;
