@@ -7,6 +7,7 @@ document.getElementById('link1').onmousedown = function() {
     document.getElementById('section1').classList.remove('box-active');
     document.getElementById('section2').classList.remove('box-active2');
     document.getElementById('section3').classList.remove('box-active');
+    document.getElementById('section4').classList.remove('box-active2');
     return false;
 };
 
@@ -15,6 +16,7 @@ document.getElementById('link1').onclick = function() {
     document.getElementById('section1').classList.add('box-active');
     document.getElementById('section3').classList.add('box-active');
     document.getElementById('section2').classList.add('box-active2');
+    document.getElementById('section4').classList.add('box-active2');
     return false;
 };
 //================================LINK 2 ================================/
@@ -23,6 +25,7 @@ document.getElementById('link2').onmousedown = function() {
     document.getElementById('section1').classList.remove('box-active');
     document.getElementById('section2').classList.remove('box-active2');
     document.getElementById('section3').classList.remove('box-active');
+    document.getElementById('section4').classList.remove('box-active2');
     return false;
 };
 
@@ -30,6 +33,7 @@ document.getElementById('link2').onclick = function() {
     document.getElementById('section1').classList.add('box-active');
     document.getElementById('section3').classList.add('box-active');
     document.getElementById('section2').classList.add('box-active2');
+    document.getElementById('section4').classList.add('box-active2');
     return false;
 };
 //================================LINK 3 ==============================/
@@ -37,6 +41,7 @@ document.getElementById('link3').onmousedown = function() {
     document.getElementById('section1').classList.remove('box-active');
     document.getElementById('section2').classList.remove('box-active2');
     document.getElementById('section3').classList.remove('box-active');
+    document.getElementById('section4').classList.remove('box-active2');
     return false;
 };
 
@@ -44,6 +49,7 @@ document.getElementById('link3').onclick = function() {
     document.getElementById('section1').classList.add('box-active');
     document.getElementById('section3').classList.add('box-active');
     document.getElementById('section2').classList.add('box-active2');
+    document.getElementById('section4').classList.add('box-active2');
     return false;
 };
 
@@ -53,6 +59,7 @@ document.getElementById('link0').onmousedown = function()
     document.getElementById('section1').classList.remove('box-active');
     document.getElementById('section2').classList.remove('box-active2');
     document.getElementById('section3').classList.remove('box-active');
+    document.getElementById('section4').classList.remove('box-active2');
     return false;
 };
 
@@ -61,6 +68,7 @@ document.getElementById('link0').onclick = function()
     document.getElementById('section1').classList.add('box-active');
     document.getElementById('section3').classList.add('box-active');
     document.getElementById('section2').classList.add('box-active2');
+    document.getElementById('section4').classList.add('box-active2');
     return false;
 };
 
@@ -69,6 +77,7 @@ document.getElementById('link').onmousedown = function() {
     document.getElementById('section1').classList.remove('box-active');
     document.getElementById('section2').classList.remove('box-active2');
     document.getElementById('section3').classList.remove('box-active');
+    document.getElementById('section4').classList.remove('box-active2');
     return false;
 };
 
@@ -76,6 +85,7 @@ document.getElementById('link').onclick = function() {
     document.getElementById('section1').classList.add('box-active');
     document.getElementById('section3').classList.add('box-active');
     document.getElementById('section2').classList.add('box-active2');
+    document.getElementById('section4').classList.add('box-active2');
     return false;
 };
 
@@ -84,6 +94,7 @@ document.getElementById('link5').onmousedown = function() {
     document.getElementById('section1').classList.remove('box-active');
     document.getElementById('section2').classList.remove('box-active2');
     document.getElementById('section3').classList.remove('box-active');
+    document.getElementById('section4').classList.remove('box-active2');
     return false;
 };
 
@@ -91,6 +102,7 @@ document.getElementById('link5').onclick = function() {
     document.getElementById('section1').classList.add('box-active');
     document.getElementById('section3').classList.add('box-active');
     document.getElementById('section2').classList.add('box-active2');
+    document.getElementById('section4').classList.add('box-active2');
     return false;
 };
 
@@ -99,6 +111,7 @@ document.getElementById('link6').onmousedown = function() {
     document.getElementById('section1').classList.remove('box-active');
     document.getElementById('section2').classList.remove('box-active2');
     document.getElementById('section3').classList.remove('box-active');
+    document.getElementById('section4').classList.remove('box-active2');
     return false;
 };
 
@@ -106,6 +119,7 @@ document.getElementById('link6').onclick = function() {
     document.getElementById('section1').classList.add('box-active');
     document.getElementById('section3').classList.add('box-active');
     document.getElementById('section2').classList.add('box-active2');
+    document.getElementById('section4').classList.add('box-active2');
     return false;
 };
 //================================LINK 7 ==============================/
@@ -113,6 +127,7 @@ document.getElementById('link7').onmousedown = function() {
     document.getElementById('section1').classList.remove('box-active');
     document.getElementById('section2').classList.remove('box-active2');
     document.getElementById('section3').classList.remove('box-active');
+    document.getElementById('section4').classList.remove('box-active2');
     return false;
 };
 
@@ -120,6 +135,7 @@ document.getElementById('link7').onclick = function() {
     document.getElementById('section1').classList.add('box-active');
     document.getElementById('section3').classList.add('box-active');
     document.getElementById('section2').classList.add('box-active2');
+    document.getElementById('section4').classList.add('box-active2');
     return false;
 };
 
@@ -128,6 +144,7 @@ document.getElementById('link8').onmousedown = function() {
     document.getElementById('section1').classList.remove('box-active');
     document.getElementById('section2').classList.remove('box-active2');
     document.getElementById('section3').classList.remove('box-active');
+    document.getElementById('section4').classList.remove('box-active2');
     return false;
 };
 
@@ -135,6 +152,7 @@ document.getElementById('link8').onclick = function() {
     document.getElementById('section1').classList.add('box-active');
     document.getElementById('section3').classList.add('box-active');
     document.getElementById('section2').classList.add('box-active2');
+    document.getElementById('section4').classList.add('box-active2');
     return false;
 };
 
@@ -143,6 +161,7 @@ document.getElementById('qsn').onmousedown = function() {
     document.getElementById('section1').classList.remove('box-active');
     document.getElementById('section2').classList.remove('box-active2');
     document.getElementById('section3').classList.remove('box-active');
+    document.getElementById('section4').classList.remove('box-active2');
     return false;
 };
 
@@ -150,6 +169,7 @@ document.getElementById('qsn').onclick = function() {
     document.getElementById('section1').classList.add('box-active');
     document.getElementById('section3').classList.add('box-active');
     document.getElementById('section2').classList.add('box-active2');
+    document.getElementById('section4').classList.add('box-active2');
     return false;
 };
 
@@ -162,6 +182,8 @@ $('#link0').click(function() {
     $('#section1').load("mains.html #sectiontarifs1");
     $('#section2').load("mains.html #sectiontarifs2");
     $('#section3').load("mains.html #sectiontarifs3");
+    $('#section4').load("mains.html #sectiontarifs4");
+
     // Animation CSS
     $('header').css({
         'background-image': 'url("images/peinture.jpg")',
@@ -209,6 +231,7 @@ $('#link').click(function() {
     $('#section1').load("mains.html #sectioninfo1");
     $('#section2').load("mains.html #sectioninfo2");
     $('#section3').load("mains.html #sectioninfo3");
+    $('#section4').load("mains.html #sectioninfo4");
     // Animation CSS
     $('header').css({
         'background-image': 'url("images/peinture.jpg")',
@@ -257,6 +280,7 @@ $('#link1').click(function() {
     $('#section1').load("index.html #section1");
     $('#section2').load("index.html #section2");
     $('#section3').load("index.html #section3");
+    $('#section4').load("mains.html #section4");
     // Animation CSS
     $('header').css({
         'background-image': 'url(images/bgbody.jpg)',
@@ -307,6 +331,7 @@ $('#link2').click(function() {
     $('#section1').load("mains.html #sectionaccr1");
     $('#section2').load("mains.html #sectionaccr2");
     $('#section3').load("mains.html #sectionaccr3");
+    $('#section4').load("mains.html #sectionaccr4");
 
     // Animation CSS
     $('header').css({
@@ -357,6 +382,7 @@ $('#link3').click(function() {
     $('#section1').load("mains.html #sectionskate1");
     $('#section2').load("mains.html #sectionskate2");
     $('#section3').load("mains.html #sectionskate3");
+    $('#section4').load("mains.html #sectionskate4");
 
     // Animation CSS
     $('header').css({
@@ -412,6 +438,7 @@ $('#link5').click(function() {
     $('#section1').load("mains.html #sectionevent1");
     $('#section2').load("mains.html #sectionevent2");
     $('#section3').load("mains.html #sectionevent3");
+    $('#section4').load("mains.html #sectionevent4");
 
     // Animation CSS
     $('header').css({
@@ -461,6 +488,7 @@ $('#link6').click(function() {
     $('#section1').load("mains.html #sectionann1");
     $('#section2').load("mains.html #sectionann2");
     $('#section3').load("mains.html #sectionann3");
+    $('#section4').load("mains.html #sectionann4");
 
     // Animation CSS
     $('header').css({
@@ -511,6 +539,7 @@ $('#link7').click(function() {
     $('#section1').load("mains.html #sectiontramp1");
     $('#section2').load("mains.html #sectiontramp2");
     $('#section3').load("mains.html #sectiontramp3");
+    $('#section4').load("mains.html #sectiontramp4");
 
     // Animation CSS
     $('header').css({
@@ -561,6 +590,7 @@ $('#link8').click(function() {
     $('#section1').load("mains.html #sectiongrp1");
     $('#section2').load("mains.html #sectiongrp2");
     $('#section3').load("mains.html #sectiongrp3");
+    $('#section4').load("mains.html #sectiongrp4");
 
     // Animation CSS
     $('header').css({
@@ -610,6 +640,7 @@ $('#qsn').click(function() {
     $('#section1').load("mains.html #sectionqui1");
     $('#section2').load("mains.html #sectionqui2");
     $('#section3').load("mains.html #sectionqui3");
+    $('#section4').load("mains.html #sectionqui4");
     // Animation CSS
     $('header').css({
         'border-bottom': '4px solid #FB7826',
