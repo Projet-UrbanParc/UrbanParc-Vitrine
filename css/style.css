@@ -131,7 +131,7 @@
 /*=========*/
 
 body {
-    font-family: 'Futura';
+    font-family: 'UrbanJungle';
 }
 
 p {
@@ -221,7 +221,10 @@ img {
     src: url("../fonts/Eurostyle.ttf");
 }
 
-
+@font-face {
+  font-family: "UrbanJungle";
+  src: url("../fonts/UrbanJungleDEMO.otf");
+}
 /*---------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -563,6 +566,14 @@ h2 {
 .img_sec img{
   margin: 2%;
 }
+.img_sec2{
+  display: flex;
+  flex-direction: column;
+}
+.img_sec2 p{
+  margin: 1em;
+  font-weight: bold;
+}
 .text_sec, .calendrier {
     /*calendrier déplacé dans main anniversaire*/
     width: 50%;
@@ -572,6 +583,7 @@ h2 {
 .text_sec p {
   width: 50%;
   height: 20%;
+  margin: 1em;
     /*text-indent: 1.250em;*/
 }
 
