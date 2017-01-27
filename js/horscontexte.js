@@ -225,7 +225,7 @@ $('#link0').click(function() {
         'transition': '8s'
     });
 });
-// LIEN INFOS FOOTER
+// LIEN TARIFS
 $('#link').click(function() {
     //requête Ajax
     $('#section1').load("mains.html #sectioninfo1");
@@ -280,7 +280,7 @@ $('#link1').click(function() {
     $('#section1').load("index.html #section1");
     $('#section2').load("index.html #section2");
     $('#section3').load("index.html #section3");
-    $('#section4').load("mains.html #section4");
+    $('#section4').load("index.html #section4");
     // Animation CSS
     $('header').css({
         'background-image': 'url(images/bgbody.jpg)',
