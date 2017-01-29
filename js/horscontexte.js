@@ -603,40 +603,40 @@ $('#link8').click(function() {
         'background-image': 'url("images/header_groupes.png")',
         'background-size': 'cover',
         'background-repeat': 'no-repeat',
-        'border-bottom': '4px solid #625F5F',
+        'border-bottom': '4px solid #0C2448',
         'transition': '8s'
     });
     $('h1').css({
-        'color': '#625F5F',
+        'color': '#0C2448',
         'transition': '8s'
     });
     $('li').css({
-        'border-right': '2px solid #625F5F',
+        'border-right': '2px solid #0C2448',
         'transition': '8s'
     });
     $('.fa').css({
-        'color': '#625F5F',
+        'color': '#0C2448',
         'transition': '8s'
     });
     $('.hr_section').css({
-        'border': '4px solid #625F5F',
+        'border': '4px solid #0C2448',
         'transition': '8s'
     });
     $('.hr_footer').css({
-        'border': '4px solid #625F5F',
+        'border': '4px solid #0C2448',
         'transition': '8s'
     });
     $('.maps').css({
-        'border-top': '3px solid #625F5F',
+        'border-top': '3px solid #0C2448',
         'transition': '8s'
     });
     $('.barre').css({
-        'background': '#625F5F',
+        'background': '#0C2448',
         'transition': '8s'
     });
     $('h4').css({
-        'color': '#625F5F',
-        'text-shadow': '0.5px 0.5px white',
+        'color': '#0C2448',
+        'text-shadow': '0.5px 0.5px #fff',
         'transition': '8s'
     });
 });
