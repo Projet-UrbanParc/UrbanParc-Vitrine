@@ -178,6 +178,8 @@ document.getElementById('qsn').onclick = function() {
 /// Effets sonore et requêtes Ajax
 /// LIEN TARIFS
 $('#link0').click(function() {
+    //Effet Audio
+    $('#' + $(this).attr('rel'))[0].play();
     //requête Ajax
     $('#section1').load("mains.html #sectiontarifs1");
     $('#section2').load("mains.html #sectiontarifs2");
