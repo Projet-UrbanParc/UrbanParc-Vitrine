@@ -143,6 +143,10 @@ a {
     outline: none;
 }
 
+.email{
+  font-family: "Futura";
+}
+
 li {
     list-style: none;
 }
@@ -556,9 +560,7 @@ h2 {
     font-size: 24px;
     margin-bottom: 1em;
     text-align: center;
-}
-.titre_sec{
-    height: 1.7em;
+    /*color: #FB7826;*/
 }
 
 .img_sec {
@@ -1268,6 +1270,7 @@ h4 {
     h2 {
         display: relative;
         text-align: center;
+        /*color: #FB7826;*/
     }
 
     /*FIN INFOS */
@@ -1669,6 +1672,7 @@ h4 {
     }
     h2 {
         font-size: 20px;
+        /*color: #FB7826;*/
     }
 
     #saveMe {

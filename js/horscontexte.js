@@ -225,6 +225,7 @@ $('#link0').click(function() {
         'transition': '8s'
     });
 });
+
 // LIEN TARIFS
 $('#link').click(function() {
     //requête Ajax
@@ -321,7 +322,6 @@ $('#link1').click(function() {
         'color': '#FB7826',
         'transition': '8s'
     });
-
 });
 
 //Effet Audio Accrobranche
@@ -344,6 +344,10 @@ $('#link2').click(function() {
     $('h1').css({
         'color': '#4BA33C',
         'transition': '8s'
+    });
+    $('h2').css({
+      'color': '#4BA33C',
+      'transition': '8s'
     });
     $('li').css({
         'border-right': '2px solid #4BA33C',
