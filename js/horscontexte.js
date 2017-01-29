@@ -379,6 +379,10 @@ $('#link2').click(function() {
         'color': '#4BA33C',
         'transition': '8s'
     });
+    $('button').css({
+      'background-color': '#4BA33C',
+      'transition': '8s'
+    });
 });
 
 //Effet Audio Skatepark

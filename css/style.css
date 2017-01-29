@@ -165,6 +165,19 @@ img {
     box-shadow: 10px 10px 5px #888888;
 }
 
+button{
+  width: 30%;
+  height: 3em;
+  border: none;
+  border-radius: 4%;
+  font-size: 30px;
+  font-family: "UrbanJungle";
+  color: #fff;
+  background-color: #4BA33C;
+  box-shadow: 10px 10px 5px #888888;
+  cursor: pointer;
+}
+
 .fa-bell-slash {
     cursor: pointer;
     text-shadow: none;
