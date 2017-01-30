@@ -36,15 +36,15 @@
   			<!-- NAVIGATION -->
   			<nav>
   				<ul><!--Mettre les id et rel des links dans les li-->
-  					<li class="accueil"><a id='link1' rel="son1" href="#">Accueil</a></li>
+  					<li class="accueil" id='link1' rel="son1"><a href="#">Accueil</a></li>
   					<li class="accrobranche" id='link2' rel="son2"><a href="#">Accrobranche</a></li>
-  					<li class="skatepark"><a id='link3' rel="son3" href="#">SkatePark</a></li>
-  					<li class="trampo"><a id='link7' rel="son7" href="#">Trampoline</a></li>
-  					<li class="tarif"><a id='link0' rel="son0" href="#">Tarifs</a></li>
-  					<li class="anniversaire"><a id='link6' rel="son6" href="#">Anniversaire</a></li>
-  					<li class="evenement"><a id='link5' rel="son5" href="#">Event</a></li>
-  					<li class="groupes"><a id='link8' rel="son8" href="#">Groupes</a></li>
-  					<li class="media"><a href="media.html">Photo/Vidéo</a></li>
+  					<li class="skatepark" id='link3' rel="son3"><a href="#">SkatePark</a></li>
+  					<li class="trampo" id='link7' rel="son7"><a href="#">Trampoline</a></li>
+  					<li class="tarif" id='link0' rel="son0"><a href="#">Tarifs</a></li>
+  					<li class="anniversaire" id='link6' rel="son6"><a href="#">Anniversaire</a></li>
+  					<li class="evenement" id='link5' rel="son5"><a href="#">Event</a></li>
+  					<li class="groupes" id='link8' rel="son8"><a href="#">Groupes</a></li>
+  					<li class="media"><a href="media.html">Photo/Video</a></li>
   				</ul>
   				<div class="titre_bistrot">
   					<i class="fa fa-bell-slash" id="mute" aria-hidden="true"></i>
@@ -62,9 +62,6 @@
   			</div>
 
   			<article class="header_bouton">
-  				<div class="info_header">
-  					<a id='link0' rel="son0" href="#" class="information">Informations</a>
-  				</div>
   				<div class="fb_header">
   					<div class="bouton_facebook">
   						<div>
@@ -161,13 +158,15 @@
               </article>
                 <!-- ARTICLE TEXT -->
                 <article class="text_sec">
-                    <h2>ACTIVITÉS</h2>
-                    <p> 1000m2 INDOOR D’ACTIVITÉS ET DE LOISIRS</p>
+                    <h2>1000m2 INDOOR D’ACTIVITES ET DE LOISIRS</h2>
                     <h3>SKATEPARK</h3>
-                    <p>- trottinette, rollers, skateboard, bmx… 600m2 de glisse urbaine. Zone spéciale débutants. Location de matériel.</p>
+                    <p>trottinette, rollers, skateboard, bmx…</p>
+                    <p>600m2 de glisse urbaine.</p>
+                    <p>Zone spéciale débutants.</p>
+                    <p>Location de matériel.</p>
                     <h3>ACCROBRANCHE</h3>
-                    <p>- 2 parcours pour enfants, ados et adultes sur une structure métallique de 200m2 : 35 ateliers en hauteur dont 2 tyroliennes de 20m.</p>
-                    <h3>TRAMPOLINE GÉANT</h3>
+                    <p>2 parcours pour enfants, ados et adultes sur une structure métallique de 200m2 : 35 ateliers en hauteur dont 2 tyroliennes de 20m.</p>
+                    <h3>TRAMPOLINE GEANT</h3>
                     <p>30m2 de structure en filet sécurisée à 4m du sol !</p>
                 </article>
                 <!-- ARTICLE IMAGE -->
@@ -184,17 +183,11 @@
                     <img src="images/bgbistro.jpg" alt="Menu Test">
                 </article>
                 <article class="text_sec">
-                  <div class="titre_sec">
                     <h2>BISTROT - GALERIE</h2>
-                  </div>
-                  <div class="titre_sec">
                     <h3>BISTROT</h3>
-                  </div>
                     <p>restauration sur place ou à emporter. Produits frais, bios et locaux. Cuisine de saison. Salle chauffée. Venez découvrir notre spécialité venue d'Australie : le Jaffle</p>
-                  <div class="titre_sec">
                     <h3>Galerie Street-Art</h3>
-                  </div>
-                    <p>  - fresques géantes réalisées par des artistes graffeurs de la région, expositions d'artistes locaux, évènements culturels (concerts, théâtre, impro, projections…)</p>
+                    <p>fresques géantes réalisées par des artistes graffeurs de la région, expositions d'artistes locaux, évènements culturels (concerts, théâtre, impro, projections…)</p>
                 </article>
                 <article class="img_sec">
                     <img src="images/imgup/gallerie/gallerie1.jpg" alt="Menu Test">
@@ -206,15 +199,17 @@
             <section id="section4" class="section4">
                 <!-- ARTICLE TEXT -->
                 <article class="text_sec">
-                  <div class="titre_sec">
-                    <h2>ACTUALITÉS</h2>
-                  </div>
-                    <p> </p>
+                    <h2>ACTUALITES</h2>
+                    <p>Salut les riders et rideuses !</p>
+                    <p>Pour débuter ou se perfectionner en roller, trottinette et skateboard, courrez vous inscrire au stage de vacances d'Urban Parc.</p>
+                    <p>Le skatepark est réservé et le stage est encadré par des pros.</p>
+                    <p>Inscription sur place ou par email ou par téléphone.</p>
+                    <p>Faites chauffer les roulettes !!!</p>
                 </article>
                 <!-- ARTICLE IMAGE -->
-                <article class="img_sec">
-                  <img src="images/bghead.jpg" alt="Menu Test">
-                </article>
+                <div class="img_sec_resize">
+                  <img src="images/imgup/event/actu0217.png" alt="Menu Test">
+                </div>
             </section>
             <!-- FIN DE SECTION IV -->
             <!-- GOOGLE MAP -->
@@ -230,8 +225,7 @@
                     <h4>Urban Parc</h4>
                 </div>
                 <div class="contenue">
-                    <a href="#" id="qsn">Qui sommes nous ?</a>
-                    <a href="#" id='link'>Nous contacter</a>
+
                 </div>
             </section>
             <!-- FIN SECTION 1 -->

@@ -141,10 +141,13 @@ p {
 a {
     text-decoration: none;
     outline: none;
+    color: #FC2A21;
 }
 
 .email{
-  font-family: "Futura";
+  font-family: "ToxTypewriter";
+  font-weight: bold;
+  font-size: 1.500em;
 }
 
 li {
@@ -168,12 +171,12 @@ img {
 button{
   width: 30%;
   height: 3em;
+  margin-top: 1em;
   border: none;
   border-radius: 4%;
   font-size: 30px;
   font-family: "UrbanJungle";
   color: #fff;
-  background-color: #4BA33C;
   box-shadow: 10px 10px 5px #888888;
   cursor: pointer;
 }
@@ -269,7 +272,7 @@ button{
 header {
   width: 100%;
   height: 35em;
-    background-image: url('../images/bgbody.jpg');
+    background-image: url('../images/header_accueil.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom: 4px solid #FB7826;
@@ -313,7 +316,7 @@ header {
 }
 
 .tarif:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(209, 172, 53, 0.8);
 }
 
 .evenement:hover {
@@ -460,13 +463,14 @@ nav a {
     flex-direction: row;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: space-between;
+    justify-content: flex-end;
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
     height: 35em;
     padding: 0;
     margin: 0;
+    font-family: "Futura";
 }
 
 .fb_header {
@@ -581,12 +585,33 @@ h2 {
   flex-direction: row;
     width: 50%;
 }
+
+/*Image ACTUALITES Accueil*/
+.img_sec_resize {
+  display: flex;
+  flex-direction: row;
+    width: 30%;
+    height: 80%;
+    margin: 12%;
+}
+/*1ere Image Anniversaire*/
+.img_sec_resize2 {
+  display: flex;
+  flex-direction: row;
+    width: 30%;
+    height: 80%;
+    padding: 12%;
+}
+
 .img_sec img{
   margin: 2%;
 }
 .img_sec2{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 .img_sec2 p{
   margin: 1em;
