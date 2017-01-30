@@ -188,7 +188,7 @@ $('#link0').click(function() {
 
     // Animation CSS
     $('header').css({
-        'background-image': 'url("images/peinture.jpg")',
+        'background-image': 'url("images/header_tarif.png")',
         'background-size': 'cover',
         'background-repeat': 'no-repeat',
         'border-bottom': '4px solid #FB7826',
@@ -553,7 +553,7 @@ $('#link7').click(function() {
 
     // Animation CSS
     $('header').css({
-        'background-image': 'url("images/wip.png")',
+        'background-image': 'url("images/header_trampo.png")',
         'background-size': 'cover',
         'background-repeat': 'no-repeat',
         'border-bottom': '4px solid #673500',
